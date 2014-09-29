@@ -1,4 +1,4 @@
- { g; S (void) { struct } { } int &g; }
+ { S ( ) { struct } int g ; }
  
  /*
   backtrace:
