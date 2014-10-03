@@ -1,5 +1,6 @@
- ( ) ( ) ( ) ( ( ( ) { ( ( ) ) ( ) } [ ] ( ) ) { "h" ( ( ( ( ) ( ) ( ) ( ) ) ( ) ) ) ( ( " " "h" ) ) ( " 2" ( ( ) ) ( ; strcat ( strcat ( strcat '\0' ( ": " ) ) "is " ) "a " ) ( ( ) ) ( { { } [ ] ( ) ( ( ) ( ) ( ) [ ] ) ( ( ) { ( ) [ ] ( [ ] ) [ ] ( ) [ ] } ( ) ( ) ( ) ( ) ( ( ) : ( ( ) ) ) ( ) ) } ( ) { [ ] [ ] } [ ] ) ) ( ; ( ) ( ) ) { ( [ ] ) } { ( [ ] ( ) ) ( ) } ( ) { ( [ ] ) } } ) { }
-/*backtrace:
+ ; strcat ( strcat ( ( ) "x" ) ( ) ) { }
+  
+       /*backtrace:
 #0  0x0829561c in Token::next (this=0x0) at lib/token.h:412
 No locals.
 #1  0x083f5a02 in Token::move (srcStart=0x8558668, srcEnd=0x0, newLocation=0x8558408) at lib/token.cpp:701
