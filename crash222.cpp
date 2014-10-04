@@ -1,5 +1,4 @@
  (char *src); * const (void) { (buffer, "Unknown "); }
- 
  /*backtrace:
 #0  0x083f4a88 in Token::multiCompare (tok=0x8555630, haystack=0x846dd20 "main ( int %var% , char * %var% [ ] ,|)", varid=0) at lib/token.cpp:438
         emptyStringFound = false
