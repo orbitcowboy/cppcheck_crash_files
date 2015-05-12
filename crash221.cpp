@@ -2,7 +2,7 @@ V
 #define X b   #endif #line 0 "x"  ; 
 #if ! defined ( Y )    #endif
 
-/*backtrace:
+/*
 backtrace:
 #0  0x00000000006a5c01 in std::__cxx1998::vector<std::string, std::allocator<std::string> >::begin (this=0x60) at /usr/include/c++/4.9/bits/stl_vector.h:557
 No locals.
