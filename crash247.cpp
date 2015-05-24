@@ -1,0 +1,1 @@
+ { }; class C : F { }; { (A *p1) : { } }; { }; class D : C, C7 { }; struct F : D { { } }; void fn1 () { F::m_fn2 (); }
