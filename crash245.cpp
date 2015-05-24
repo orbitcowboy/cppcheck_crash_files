@@ -1,0 +1,1 @@
+ { }; struct B : D { }; struct D : B { D(int) }; { assert(count 1); }
