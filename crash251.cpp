@@ -1,5 +1,6 @@
 // y, (int, *, ...); (int, char long int); int (int x, ...) { (5, ()); } a (int ...) { (y, __builtin_va_arg_pack ()); } f3 (int ...) { (y, __builtin_va_arg_pack ()); } extern inline f1 int { (int { (y, 4, 6); } int (int ...) { baz (y, "", __builtin_va_arg_pack ()); } int (int ...) { __builtin_va_arg_pack } (5, 6); (6, 17LL); f4 (7, 3); ...) += f5 (8, 7L); }
- ( ( ) ) { } ( { ( __builtin_va_arg_pack ( ) ) ; } ) { ( int { ( ) ( ( ) ) } ( ) { } ( ) ) += ( ) }
+// ( ( ) ) { } ( { ( __builtin_va_arg_pack ( ) ) ; } ) { ( int { ( ) ( ( ) ) } ( ) { } ( ) ) += ( ) }
+ ( ) { } ( { ( __builtin_va_arg_pack ( ) ) } ) { ( int { ( ) } ( ) { } ( ) ) += ( ) }
 /*backtrace:
 #0  0x00000000006d7888 in Token::previous (this=0x0) at lib/token.h:451
 No locals.
