@@ -1,1 +1,0 @@
- y, (int, *, ...); (int, char long int); int (int x, ...) { (5, ()); } a (int ...) { (y, __builtin_va_arg_pack ()); } f3 (int ...) { (y, __builtin_va_arg_pack ()); } extern inline f1 int { (int { (y, 4, 6); } int (int ...) { baz (y, "", __builtin_va_arg_pack ()); } int (int ...) { __builtin_va_arg_pack } (5, 6); (6, 17LL); f4 (7, 3); ...) += f5 (8, 7L); }
