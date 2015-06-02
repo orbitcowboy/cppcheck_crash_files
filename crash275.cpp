@@ -1,5 +1,5 @@
- (const va_list); ((__format__(__printf__, 0))) (noattr_t i) { } (noattr_t i) { } (vnoattr_t i) { } (vnoattr_t i) { } typedef void (*noattr_t) (const ...); noattr_t __attribute__ ((__format__(__printf__, 2)))
- 
+ //(const va_list); ((__format__(__printf__, 0))) (noattr_t i) { } (noattr_t i) { } (vnoattr_t i) { } (vnoattr_t i) { } typedef void (*noattr_t) (const ...); noattr_t __attribute__ ((__format__(__printf__, 2)))
+  ( ) { } typedef void noattr_t ( ) ; noattr_t __attribute__ ( )
  /*backtrace:
 #0  0x082b6110 in std::string::_M_data (this=0x18) at /usr/include/c++/4.9/bits/basic_string.h:293
 No locals.
