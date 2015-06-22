@@ -1,4 +1,4 @@
- template <class T> struct A { struct AA ; struct } ; T> B : public { struct B : : ; struct ; private : static T valueA_AA ; static ; static T } ; template <typename T> T B<T> : : ; template <typename B<T> : valueA_AC ;[ template T B<T> : template T> A<T> : { int () { return B<T> : : valueA_AA ; } } ; template <class T> struct A<T> :] AC { M () { return valueA_AC ; } } ; struct { int M { return B<int> : : value_AC ; } } b ; A<int> a_aa ; A<int> AC a_ac AC ac ; int () { a_aa.M ; a_ac.M () () }
+{ T struct B : T valueA_AA ; } T : [ T > ( ) { B } template < T > struct A < > : ] { ( ) { return valueA_AC struct { : } } b A < int > AC ( ) a_aa.M ; ( ) ( ) }
 /*backtrace:
 #0  0x00000000006a055e in std::string::length (this=0xc60260) at /usr/include/c++/4.9/bits/basic_string.h:731
 No locals.
