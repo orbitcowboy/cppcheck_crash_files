@@ -1,0 +1,1 @@
+ template < Types > struct S ( S < ) S > { ( ) { }>> }<< ( ) { S < void > ( ) }
