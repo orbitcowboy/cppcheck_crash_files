@@ -1,0 +1,1 @@
+ enum { X = << { X } } enum { X = X } = X ;
