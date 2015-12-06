@@ -1,0 +1,13 @@
+backtrace:
+No stack.
+
+
+registers:
+The program has no registers now.
+
+
+current instructions:
+No registers.
+
+
+threads backtrace:
