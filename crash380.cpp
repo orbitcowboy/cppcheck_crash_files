@@ -1,0 +1,1 @@
+typedef s f[](){typedef d h(;f)}
