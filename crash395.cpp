@@ -1,0 +1,1 @@
+template<0=>>{{((s<0>()))}}>class o:
