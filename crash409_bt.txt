@@ -1,0 +1,76 @@
+backtrace:
+#0  0x000000000048aac3 in CheckCondition::comparison() ()
+No symbol table info available.
+#1  0x000000000048aba3 in CheckCondition::runSimplifiedChecks(Tokenizer const*, Settings const*, ErrorLogger*) ()
+No symbol table info available.
+#2  0x00000000004f06a6 in CppCheck::checkSimplifiedTokens(Tokenizer const&) ()
+No symbol table info available.
+#3  0x00000000004f9f4d in CppCheck::processFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+No symbol table info available.
+#4  0x00000000004fa525 in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+No symbol table info available.
+#5  0x0000000000590302 in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+No symbol table info available.
+#6  0x0000000000590a4e in CppCheckExecutor::check(int, char const* const*) ()
+No symbol table info available.
+#7  0x0000000000460532 in main ()
+No symbol table info available.
+
+
+registers:
+rax            0x0	0
+rbx            0x0	0
+rcx            0x82e568	8578408
+rdx            0x5a4cae	5917870
+rsi            0x7fffffffba7c	140737488337532
+rdi            0x82e558	8578392
+rbp            0x7fffffffba80	0x7fffffffba80
+rsp            0x7fffffffb9f0	0x7fffffffb9f0
+r8             0x829230	8557104
+r9             0x0	0
+r10            0x30	48
+r11            0x7fffffffb140	140737488335168
+r12            0x830550	8586576
+r13            0x0	0
+r14            0x82e558	8578392
+r15            0x7fffffffba98	140737488337560
+rip            0x48aac3	0x48aac3 <CheckCondition::comparison()+641>
+eflags         0x10202	[ IF RF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+gs             0x0	0
+
+
+current instructions:
+=> 0x48aac3 <_ZN14CheckCondition10comparisonEv+641>:	mov    0x90(%rax),%rax
+   0x48aaca <_ZN14CheckCondition10comparisonEv+648>:	test   %rax,%rax
+   0x48aacd <_ZN14CheckCondition10comparisonEv+651>:	je     0x48a9d6 <_ZN14CheckCondition10comparisonEv+404>
+   0x48aad3 <_ZN14CheckCondition10comparisonEv+657>:	cmpl   $0x2,(%rax)
+   0x48aad6 <_ZN14CheckCondition10comparisonEv+660>:	jne    0x48a9d6 <_ZN14CheckCondition10comparisonEv+404>
+   0x48aadc <_ZN14CheckCondition10comparisonEv+666>:	jmp    0x48aaf8 <_ZN14CheckCondition10comparisonEv+694>
+   0x48aade <_ZN14CheckCondition10comparisonEv+668>:	mov    %r12,%rdi
+   0x48aae1 <_ZN14CheckCondition10comparisonEv+671>:	callq  0x4855f2 <_ZL7match27PK5Token>
+   0x48aae6 <_ZN14CheckCondition10comparisonEv+676>:	cmp    %r13,%rbx
+   0x48aae9 <_ZN14CheckCondition10comparisonEv+679>:	jl     0x48a9d6 <_ZN14CheckCondition10comparisonEv+404>
+   0x48aaef <_ZN14CheckCondition10comparisonEv+685>:	test   %al,%al
+   0x48aaf1 <_ZN14CheckCondition10comparisonEv+687>:	jne    0x48ab17 <_ZN14CheckCondition10comparisonEv+725>
+   0x48aaf3 <_ZN14CheckCondition10comparisonEv+689>:	jmpq   0x48a9d6 <_ZN14CheckCondition10comparisonEv+404>
+   0x48aaf8 <_ZN14CheckCondition10comparisonEv+694>:	mov    %r12,%rdi
+   0x48aafb <_ZN14CheckCondition10comparisonEv+697>:	callq  0x48550c <_ZL7match25PK5Token>
+   0x48ab00 <_ZN14CheckCondition10comparisonEv+702>:	mov    %r12,%rdi
+
+
+threads backtrace:
+
+Thread 1 (Thread 0x7ffff7fc2740 (LWP 8365)):
+#0  0x000000000048aac3 in CheckCondition::comparison() ()
+#1  0x000000000048aba3 in CheckCondition::runSimplifiedChecks(Tokenizer const*, Settings const*, ErrorLogger*) ()
+#2  0x00000000004f06a6 in CppCheck::checkSimplifiedTokens(Tokenizer const&) ()
+#3  0x00000000004f9f4d in CppCheck::processFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+#4  0x00000000004fa525 in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+#5  0x0000000000590302 in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+#6  0x0000000000590a4e in CppCheckExecutor::check(int, char const* const*) ()
+#7  0x0000000000460532 in main ()
