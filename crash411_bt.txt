@@ -1,0 +1,79 @@
+backtrace:
+#0  0x0000000000463078 in isVariableChanged(Token const*, Token const*, unsigned int, bool, Settings const*) ()
+No symbol table info available.
+#1  0x000000000058389b in valueFlowBeforeCondition(TokenList*, SymbolDatabase*, ErrorLogger*, Settings const*) [clone .constprop.326] ()
+No symbol table info available.
+#2  0x000000000058b2f6 in ValueFlow::setValues(TokenList*, SymbolDatabase*, ErrorLogger*, Settings const*) ()
+No symbol table info available.
+#3  0x000000000057303e in Tokenizer::simplifyTokenList2() ()
+No symbol table info available.
+#4  0x00000000004fb7fc in CppCheck::processFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+No symbol table info available.
+#5  0x00000000004fbdf7 in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+No symbol table info available.
+#6  0x0000000000591bd8 in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+No symbol table info available.
+#7  0x0000000000592324 in CppCheckExecutor::check(int, char const* const*) ()
+No symbol table info available.
+#8  0x00000000004607b2 in main ()
+No symbol table info available.
+
+
+registers:
+rax            0x0	0
+rbx            0x82e340	8577856
+rcx            0x82c478	8569976
+rdx            0x0	0
+rsi            0x5ba4f6	6006006
+rdi            0x0	0
+rbp            0x82e3f0	0x82e3f0
+rsp            0x7fffffffb350	0x7fffffffb350
+r8             0x7fffffffd048	140737488343112
+r9             0x7fffffffb410	140737488335888
+r10            0x8304a0	8586400
+r11            0x7ffff7090f50	140737337954128
+r12            0x833600	8599040
+r13            0x82e3f8	8578040
+r14            0x0	0
+r15            0x7fffffffd048	140737488343112
+rip            0x463078	0x463078 <isVariableChanged(Token const*, Token const*, unsigned int, bool, Settings const*)+347>
+eflags         0x10246	[ PF ZF IF RF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+gs             0x0	0
+
+
+current instructions:
+=> 0x463078 <_Z17isVariableChangedPK5TokenS1_jbPK8Settings+347>:	mov    0x90(%rax),%rax
+   0x46307f <_Z17isVariableChangedPK5TokenS1_jbPK8Settings+354>:	test   %rax,%rax
+   0x463082 <_Z17isVariableChangedPK5TokenS1_jbPK8Settings+357>:	je     0x46302d <_Z17isVariableChangedPK5TokenS1_jbPK8Settings+272>
+   0x463084 <_Z17isVariableChangedPK5TokenS1_jbPK8Settings+359>:	mov    0x4(%rax),%eax
+   0x463087 <_Z17isVariableChangedPK5TokenS1_jbPK8Settings+362>:	sub    $0x6,%eax
+   0x46308a <_Z17isVariableChangedPK5TokenS1_jbPK8Settings+365>:	cmp    $0x6,%eax
+   0x46308d <_Z17isVariableChangedPK5TokenS1_jbPK8Settings+368>:	ja     0x46302d <_Z17isVariableChangedPK5TokenS1_jbPK8Settings+272>
+   0x46308f <_Z17isVariableChangedPK5TokenS1_jbPK8Settings+370>:	jmp    0x46305b <_Z17isVariableChangedPK5TokenS1_jbPK8Settings+318>
+   0x463091 <_Z17isVariableChangedPK5TokenS1_jbPK8Settings+372>:	mov    0x8(%rbp),%rax
+   0x463095 <_Z17isVariableChangedPK5TokenS1_jbPK8Settings+376>:	mov    $0x5a4e47,%edi
+   0x46309a <_Z17isVariableChangedPK5TokenS1_jbPK8Settings+381>:	movsbl (%rax),%esi
+   0x46309d <_Z17isVariableChangedPK5TokenS1_jbPK8Settings+384>:	callq  0x458300 <strchr@plt>
+   0x4630a2 <_Z17isVariableChangedPK5TokenS1_jbPK8Settings+389>:	test   %rax,%rax
+   0x4630a5 <_Z17isVariableChangedPK5TokenS1_jbPK8Settings+392>:	jne    0x4630bc <_Z17isVariableChangedPK5TokenS1_jbPK8Settings+415>
+   0x4630a7 <_Z17isVariableChangedPK5TokenS1_jbPK8Settings+394>:	mov    0x80(%rbp),%rbp
+   0x4630ae <_Z17isVariableChangedPK5TokenS1_jbPK8Settings+401>:	test   %rbp,%rbp
+
+
+threads backtrace:
+
+Thread 1 (Thread 0x7ffff7fc2740 (LWP 52206)):
+#0  0x0000000000463078 in isVariableChanged(Token const*, Token const*, unsigned int, bool, Settings const*) ()
+#1  0x000000000058389b in valueFlowBeforeCondition(TokenList*, SymbolDatabase*, ErrorLogger*, Settings const*) [clone .constprop.326] ()
+#2  0x000000000058b2f6 in ValueFlow::setValues(TokenList*, SymbolDatabase*, ErrorLogger*, Settings const*) ()
+#3  0x000000000057303e in Tokenizer::simplifyTokenList2() ()
+#4  0x00000000004fb7fc in CppCheck::processFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+#5  0x00000000004fbdf7 in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+#6  0x0000000000591bd8 in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+#7  0x0000000000592324 in CppCheckExecutor::check(int, char const* const*) ()
+#8  0x00000000004607b2 in main ()
