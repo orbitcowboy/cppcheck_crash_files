@@ -1,0 +1,79 @@
+backtrace:
+#0  0x0000000000462fe3 in isVariableChanged(Token const*, Token const*, unsigned int, bool, Settings const*) ()
+No symbol table info available.
+#1  0x000000000048c80c in CheckCondition::multiCondition2() ()
+No symbol table info available.
+#2  0x000000000048d1c7 in CheckCondition::runChecks(Tokenizer const*, Settings const*, ErrorLogger*) ()
+No symbol table info available.
+#3  0x00000000004f2264 in CppCheck::checkNormalTokens(Tokenizer const&) ()
+No symbol table info available.
+#4  0x00000000004fb944 in CppCheck::processFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+No symbol table info available.
+#5  0x00000000004fbfcb in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+No symbol table info available.
+#6  0x0000000000591d9a in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+No symbol table info available.
+#7  0x00000000005924e6 in CppCheckExecutor::check(int, char const* const*) ()
+No symbol table info available.
+#8  0x0000000000460842 in main ()
+No symbol table info available.
+
+
+registers:
+rax            0x0	0
+rbx            0x0	0
+rcx            0x0	0
+rdx            0x2	2
+rsi            0x82d7e0	8574944
+rdi            0x82dcf0	8576240
+rbp            0x7fffffffba60	0x7fffffffba60
+rsp            0x7fffffffb6b0	0x7fffffffb6b0
+r8             0x7fffffffd028	140737488343080
+r9             0x0	0
+r10            0x7ffff7090f50	140737337954128
+r11            0x82f520	8582432
+r12            0x0	0
+r13            0x831b10	8592144
+r14            0x2	2
+r15            0x7fffffffd028	140737488343080
+rip            0x462fe3	0x462fe3 <isVariableChanged(Token const*, Token const*, unsigned int, bool, Settings const*)+54>
+eflags         0x10283	[ CF SF IF RF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+gs             0x0	0
+
+
+current instructions:
+=> 0x462fe3 <_Z17isVariableChangedPK5TokenS1_jbPK8Settings+54>:	cmp    0x50(%rbx),%r14d
+   0x462fe7 <_Z17isVariableChangedPK5TokenS1_jbPK8Settings+58>:	je     0x462fff <_Z17isVariableChangedPK5TokenS1_jbPK8Settings+82>
+   0x462fe9 <_Z17isVariableChangedPK5TokenS1_jbPK8Settings+60>:	test   %r12b,%r12b
+   0x462fec <_Z17isVariableChangedPK5TokenS1_jbPK8Settings+63>:	je     0x463034 <_Z17isVariableChangedPK5TokenS1_jbPK8Settings+135>
+   0x462fee <_Z17isVariableChangedPK5TokenS1_jbPK8Settings+65>:	mov    %rbx,%rdi
+   0x462ff1 <_Z17isVariableChangedPK5TokenS1_jbPK8Settings+68>:	callq  0x4625d8 <_ZL7match30PK5Token>
+   0x462ff6 <_Z17isVariableChangedPK5TokenS1_jbPK8Settings+73>:	test   %al,%al
+   0x462ff8 <_Z17isVariableChangedPK5TokenS1_jbPK8Settings+75>:	je     0x463034 <_Z17isVariableChangedPK5TokenS1_jbPK8Settings+135>
+   0x462ffa <_Z17isVariableChangedPK5TokenS1_jbPK8Settings+77>:	jmpq   0x4630bd <_Z17isVariableChangedPK5TokenS1_jbPK8Settings+272>
+   0x462fff <_Z17isVariableChangedPK5TokenS1_jbPK8Settings+82>:	mov    0x64(%rbx),%edi
+   0x463002 <_Z17isVariableChangedPK5TokenS1_jbPK8Settings+85>:	callq  0x462040 <_ZNK5Token6isNameEv.isra.16>
+   0x463007 <_Z17isVariableChangedPK5TokenS1_jbPK8Settings+90>:	test   %al,%al
+   0x463009 <_Z17isVariableChangedPK5TokenS1_jbPK8Settings+92>:	jne    0x46303a <_Z17isVariableChangedPK5TokenS1_jbPK8Settings+141>
+   0x46300b <_Z17isVariableChangedPK5TokenS1_jbPK8Settings+94>:	jmp    0x463081 <_Z17isVariableChangedPK5TokenS1_jbPK8Settings+212>
+   0x46300d <_Z17isVariableChangedPK5TokenS1_jbPK8Settings+96>:	xor    %ebp,%ebp
+   0x46300f <_Z17isVariableChangedPK5TokenS1_jbPK8Settings+98>:	mov    0x38(%rsp),%rcx
+
+
+threads backtrace:
+
+Thread 1 (Thread 0x7ffff7fc2740 (LWP 22264)):
+#0  0x0000000000462fe3 in isVariableChanged(Token const*, Token const*, unsigned int, bool, Settings const*) ()
+#1  0x000000000048c80c in CheckCondition::multiCondition2() ()
+#2  0x000000000048d1c7 in CheckCondition::runChecks(Tokenizer const*, Settings const*, ErrorLogger*) ()
+#3  0x00000000004f2264 in CppCheck::checkNormalTokens(Tokenizer const&) ()
+#4  0x00000000004fb944 in CppCheck::processFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+#5  0x00000000004fbfcb in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+#6  0x0000000000591d9a in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+#7  0x00000000005924e6 in CppCheckExecutor::check(int, char const* const*) ()
+#8  0x0000000000460842 in main ()
