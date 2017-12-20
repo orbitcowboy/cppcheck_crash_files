@@ -1,0 +1,79 @@
+backtrace:
+#0  0x00005555556d42bf in valueFlowReverse(TokenList*, Token*, Token const*, ValueFlow::Value, ValueFlow::Value, ErrorLogger*, Settings const*) ()
+No symbol table info available.
+#1  0x00005555556d6039 in valueFlowBeforeCondition(TokenList*, SymbolDatabase*, ErrorLogger*, Settings const*) ()
+No symbol table info available.
+#2  0x00005555556de8f6 in ValueFlow::setValues(TokenList*, SymbolDatabase*, ErrorLogger*, Settings const*) ()
+No symbol table info available.
+#3  0x00005555556c751d in Tokenizer::simplifyTokens1(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+No symbol table info available.
+#4  0x000055555564c2c8 in CppCheck::processFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+No symbol table info available.
+#5  0x000055555564dad0 in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+No symbol table info available.
+#6  0x00005555556e4b02 in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+No symbol table info available.
+#7  0x00005555556e52f2 in CppCheckExecutor::check(int, char const* const*) ()
+No symbol table info available.
+#8  0x00005555555b3664 in main ()
+No symbol table info available.
+
+
+registers:
+rax            0x0	0
+rbx            0x555555981248	93824996610632
+rcx            0x555555981258	93824996610648
+rdx            0x0	0
+rsi            0x7fffffffb92a	140737488337194
+rdi            0x55555598123d	93824996610621
+rbp            0x7fffffffbb00	0x7fffffffbb00
+rsp            0x7fffffffb930	0x7fffffffb930
+r8             0x7fffffffbca8	140737488338088
+r9             0x7fffffffd0b8	140737488343224
+r10            0xffffffffffffff90	-112
+r11            0x7ffff726ac78	140737339894904
+r12            0x0	0
+r13            0x7fffffffb9b8	140737488337336
+r14            0x7fffffffbc48	140737488337992
+r15            0x555555981248	93824996610632
+rip            0x5555556d42bf	0x5555556d42bf <valueFlowReverse(TokenList*, Token*, Token const*, ValueFlow::Value, ValueFlow::Value, ErrorLogger*, Settings const*)+1881>
+eflags         0x10202	[ IF RF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+gs             0x0	0
+
+
+current instructions:
+=> 0x5555556d42bf <_ZL16valueFlowReverseP9TokenListP5TokenPKS1_N9ValueFlow5ValueES6_P11ErrorLoggerPK8Settings+1881>:	idiv   %r12
+   0x5555556d42c2 <_ZL16valueFlowReverseP9TokenListP5TokenPKS1_N9ValueFlow5ValueES6_P11ErrorLoggerPK8Settings+1884>:	mov    %rax,0x8(%r14)
+   0x5555556d42c6 <_ZL16valueFlowReverseP9TokenListP5TokenPKS1_N9ValueFlow5ValueES6_P11ErrorLoggerPK8Settings+1888>:	jmpq   0x5555556d4351 <_ZL16valueFlowReverseP9TokenListP5TokenPKS1_N9ValueFlow5ValueES6_P11ErrorLoggerPK8Settings+2027>
+   0x5555556d42cb <_ZL16valueFlowReverseP9TokenListP5TokenPKS1_N9ValueFlow5ValueES6_P11ErrorLoggerPK8Settings+1893>:	mov    -0x170(%rbp),%rax
+   0x5555556d42d2 <_ZL16valueFlowReverseP9TokenListP5TokenPKS1_N9ValueFlow5ValueES6_P11ErrorLoggerPK8Settings+1900>:	cmpb   $0x0,0x7a(%rax)
+   0x5555556d42d6 <_ZL16valueFlowReverseP9TokenListP5TokenPKS1_N9ValueFlow5ValueES6_P11ErrorLoggerPK8Settings+1904>:	je     0x5555556d5685 <_ZL16valueFlowReverseP9TokenListP5TokenPKS1_N9ValueFlow5ValueES6_P11ErrorLoggerPK8Settings+6943>
+   0x5555556d42dc <_ZL16valueFlowReverseP9TokenListP5TokenPKS1_N9ValueFlow5ValueES6_P11ErrorLoggerPK8Settings+1910>:	lea    -0x60(%rbp),%rbx
+   0x5555556d42e0 <_ZL16valueFlowReverseP9TokenListP5TokenPKS1_N9ValueFlow5ValueES6_P11ErrorLoggerPK8Settings+1914>:	lea    0x377e9(%rip),%rsi        # 0x55555570bad0 <_ZZL16valueFlowReverseP9TokenListP5TokenPKS1_N9ValueFlow5ValueES6_P11ErrorLoggerPK8SettingsE8__func__>
+   0x5555556d42e7 <_ZL16valueFlowReverseP9TokenListP5TokenPKS1_N9ValueFlow5ValueES6_P11ErrorLoggerPK8Settings+1921>:	lea    -0x80(%rbp),%r12
+   0x5555556d42eb <_ZL16valueFlowReverseP9TokenListP5TokenPKS1_N9ValueFlow5ValueES6_P11ErrorLoggerPK8Settings+1925>:	mov    %rbx,%rdi
+   0x5555556d42ee <_ZL16valueFlowReverseP9TokenListP5TokenPKS1_N9ValueFlow5ValueES6_P11ErrorLoggerPK8Settings+1928>:	callq  0x5555556cd8e2 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC2EPKcRKS3_.isra.241>
+   0x5555556d42f3 <_ZL16valueFlowReverseP9TokenListP5TokenPKS1_N9ValueFlow5ValueES6_P11ErrorLoggerPK8Settings+1933>:	lea    0x370b1(%rip),%rsi        # 0x55555570b3ab
+   0x5555556d42fa <_ZL16valueFlowReverseP9TokenListP5TokenPKS1_N9ValueFlow5ValueES6_P11ErrorLoggerPK8Settings+1940>:	mov    %r12,%rdi
+   0x5555556d42fd <_ZL16valueFlowReverseP9TokenListP5TokenPKS1_N9ValueFlow5ValueES6_P11ErrorLoggerPK8Settings+1943>:	callq  0x5555556cd8e2 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC2EPKcRKS3_.isra.241>
+   0x5555556d4302 <_ZL16valueFlowReverseP9TokenListP5TokenPKS1_N9ValueFlow5ValueES6_P11ErrorLoggerPK8Settings+1948>:	lea    -0xa0(%rbp),%r13
+   0x5555556d4309 <_ZL16valueFlowReverseP9TokenListP5TokenPKS1_N9ValueFlow5ValueES6_P11ErrorLoggerPK8Settings+1955>:	mov    -0x190(%rbp),%rdx
+
+
+threads backtrace:
+
+Thread 1 (Thread 0x7ffff7fc6740 (LWP 95571)):
+#0  0x00005555556d42bf in valueFlowReverse(TokenList*, Token*, Token const*, ValueFlow::Value, ValueFlow::Value, ErrorLogger*, Settings const*) ()
+#1  0x00005555556d6039 in valueFlowBeforeCondition(TokenList*, SymbolDatabase*, ErrorLogger*, Settings const*) ()
+#2  0x00005555556de8f6 in ValueFlow::setValues(TokenList*, SymbolDatabase*, ErrorLogger*, Settings const*) ()
+#3  0x00005555556c751d in Tokenizer::simplifyTokens1(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+#4  0x000055555564c2c8 in CppCheck::processFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+#5  0x000055555564dad0 in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+#6  0x00005555556e4b02 in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+#7  0x00005555556e52f2 in CppCheckExecutor::check(int, char const* const*) ()
+#8  0x00005555555b3664 in main ()
