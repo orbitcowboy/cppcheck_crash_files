@@ -1,0 +1,85 @@
+backtrace:
+#0  0x000055555568be66 in TemplateSimplifier::expandTemplate(TokenList&, Token const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<Token const*, std::allocator<Token const*> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<Token const*, std::allocator<Token const*> > const&, std::__cxx11::list<TemplateSimplifier::TokenAndName, std::allocator<TemplateSimplifier::TokenAndName> >&) ()
+No symbol table info available.
+#1  0x000055555568cc2b in TemplateSimplifier::simplifyTemplateInstantiations(TokenList&, ErrorLogger*, Settings const*, TemplateSimplifier::TokenAndName const&, std::__cxx11::list<Token const*, std::allocator<Token const*> > const&, long, std::__cxx11::list<TemplateSimplifier::TokenAndName, std::allocator<TemplateSimplifier::TokenAndName> >&, std::set<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&) ()
+No symbol table info available.
+#2  0x000055555568d8bc in TemplateSimplifier::simplifyTemplates(TokenList&, ErrorLogger*, Settings const*, long, bool&) ()
+No symbol table info available.
+#3  0x00005555556ab52b in Tokenizer::simplifyTemplates() ()
+No symbol table info available.
+#4  0x00005555556c959f in Tokenizer::simplifyTokenList1(char const*) ()
+No symbol table info available.
+#5  0x00005555556c976a in Tokenizer::simplifyTokens1(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+No symbol table info available.
+#6  0x000055555564c6ac in CppCheck::processFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+No symbol table info available.
+#7  0x000055555564dee0 in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+No symbol table info available.
+#8  0x00005555556e6e24 in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+No symbol table info available.
+#9  0x00005555556e7614 in CppCheckExecutor::check(int, char const* const*) ()
+No symbol table info available.
+#10 0x00005555555b39e4 in main ()
+No symbol table info available.
+
+
+registers:
+rax            0x5dd	1501
+rbx            0x5555559a97f0	93824996775920
+rcx            0x5555559a9808	93824996775944
+rdx            0x555555702ef1	93824993996529
+rsi            0x5555559dd430	93824996987952
+rdi            0x7fffffffb978	140737488337272
+rbp            0x7fffffffc688	0x7fffffffc688
+rsp            0x7fffffffb910	0x7fffffffb910
+r8             0x0	0
+r9             0x5555559dd430	93824996987952
+r10            0xffffffffffffff90	-112
+r11            0x7ffff726ac78	140737339894904
+r12            0x7fffffffb978	140737488337272
+r13            0x0	0
+r14            0x5555559a97f8	93824996775928
+r15            0x7fffffffbbb8	140737488337848
+rip            0x55555568be66	0x55555568be66 <TemplateSimplifier::expandTemplate(TokenList&, Token const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<Token const*, std::allocator<Token const*> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<Token const*, std::allocator<Token const*> > const&, std::__cxx11::list<TemplateSimplifier::TokenAndName, std::allocator<TemplateSimplifier::TokenAndName> >&)+2458>
+eflags         0x10216	[ PF AF IF RF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+gs             0x0	0
+
+
+current instructions:
+=> 0x55555568be66 <_ZN18TemplateSimplifier14expandTemplateER9TokenListPK5TokenRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKSt6vectorIS4_SaIS4_EESC_SH_RNS5_4listINS_12TokenAndNameESaISJ_EEE+2458>:	mov    (%rax),%rdi
+   0x55555568be69 <_ZN18TemplateSimplifier14expandTemplateER9TokenListPK5TokenRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKSt6vectorIS4_SaIS4_EESC_SH_RNS5_4listINS_12TokenAndNameESaISJ_EEE+2461>:	callq  0x555555691e6a <_ZN5Token17createMutualLinksEPS_S0_>
+   0x55555568be6e <_ZN18TemplateSimplifier14expandTemplateER9TokenListPK5TokenRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKSt6vectorIS4_SaIS4_EESC_SH_RNS5_4listINS_12TokenAndNameESaISJ_EEE+2466>:	lea    0x70527(%rip),%rax        # 0x5555556fc39c
+   0x55555568be75 <_ZN18TemplateSimplifier14expandTemplateER9TokenListPK5TokenRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKSt6vectorIS4_SaIS4_EESC_SH_RNS5_4listINS_12TokenAndNameESaISJ_EEE+2473>:	mov    $0x1,%esi
+   0x55555568be7a <_ZN18TemplateSimplifier14expandTemplateER9TokenListPK5TokenRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKSt6vectorIS4_SaIS4_EESC_SH_RNS5_4listINS_12TokenAndNameESaISJ_EEE+2478>:	mov    %rbx,%rdi
+   0x55555568be7d <_ZN18TemplateSimplifier14expandTemplateER9TokenListPK5TokenRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKSt6vectorIS4_SaIS4_EESC_SH_RNS5_4listINS_12TokenAndNameESaISJ_EEE+2481>:	mov    %rax,0x60(%rsp)
+   0x55555568be82 <_ZN18TemplateSimplifier14expandTemplateER9TokenListPK5TokenRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKSt6vectorIS4_SaIS4_EESC_SH_RNS5_4listINS_12TokenAndNameESaISJ_EEE+2486>:	callq  0x55555568f344 <_ZNK5Token5strAtB5cxx11Ei>
+   0x55555568be87 <_ZN18TemplateSimplifier14expandTemplateER9TokenListPK5TokenRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKSt6vectorIS4_SaIS4_EESC_SH_RNS5_4listINS_12TokenAndNameESaISJ_EEE+2491>:	lea    0x60(%rsp),%rsi
+   0x55555568be8c <_ZN18TemplateSimplifier14expandTemplateER9TokenListPK5TokenRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKSt6vectorIS4_SaIS4_EESC_SH_RNS5_4listINS_12TokenAndNameESaISJ_EEE+2496>:	mov    %rax,%rdi
+   0x55555568be8f <_ZN18TemplateSimplifier14expandTemplateER9TokenListPK5TokenRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKSt6vectorIS4_SaIS4_EESC_SH_RNS5_4listINS_12TokenAndNameESaISJ_EEE+2499>:	callq  0x5555555b543b <_ZN13MatchCompilereqILj2EEEbRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS_11ConstStringIXT_EEE>
+   0x55555568be94 <_ZN18TemplateSimplifier14expandTemplateER9TokenListPK5TokenRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKSt6vectorIS4_SaIS4_EESC_SH_RNS5_4listINS_12TokenAndNameESaISJ_EEE+2504>:	test   %al,%al
+   0x55555568be96 <_ZN18TemplateSimplifier14expandTemplateER9TokenListPK5TokenRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKSt6vectorIS4_SaIS4_EESC_SH_RNS5_4listINS_12TokenAndNameESaISJ_EEE+2506>:	jne    0x55555568beb1 <_ZN18TemplateSimplifier14expandTemplateER9TokenListPK5TokenRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKSt6vectorIS4_SaIS4_EESC_SH_RNS5_4listINS_12TokenAndNameESaISJ_EEE+2533>
+   0x55555568be98 <_ZN18TemplateSimplifier14expandTemplateER9TokenListPK5TokenRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKSt6vectorIS4_SaIS4_EESC_SH_RNS5_4listINS_12TokenAndNameESaISJ_EEE+2508>:	mov    %r12,%rdi
+   0x55555568be9b <_ZN18TemplateSimplifier14expandTemplateER9TokenListPK5TokenRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKSt6vectorIS4_SaIS4_EESC_SH_RNS5_4listINS_12TokenAndNameESaISJ_EEE+2511>:	callq  0x55555568993e <_ZNSt5dequeIP5TokenSaIS1_EE8pop_backEv>
+   0x55555568bea0 <_ZN18TemplateSimplifier14expandTemplateER9TokenListPK5TokenRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKSt6vectorIS4_SaIS4_EESC_SH_RNS5_4listINS_12TokenAndNameESaISJ_EEE+2516>:	mov    0x78(%rsp),%rax
+   0x55555568bea5 <_ZN18TemplateSimplifier14expandTemplateER9TokenListPK5TokenRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKSt6vectorIS4_SaIS4_EESC_SH_RNS5_4listINS_12TokenAndNameESaISJ_EEE+2521>:	cmp    %rax,0x98(%rsp)
+
+
+threads backtrace:
+
+Thread 1 (Thread 0x7ffff7fc5740 (LWP 79316)):
+#0  0x000055555568be66 in TemplateSimplifier::expandTemplate(TokenList&, Token const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<Token const*, std::allocator<Token const*> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<Token const*, std::allocator<Token const*> > const&, std::__cxx11::list<TemplateSimplifier::TokenAndName, std::allocator<TemplateSimplifier::TokenAndName> >&) ()
+#1  0x000055555568cc2b in TemplateSimplifier::simplifyTemplateInstantiations(TokenList&, ErrorLogger*, Settings const*, TemplateSimplifier::TokenAndName const&, std::__cxx11::list<Token const*, std::allocator<Token const*> > const&, long, std::__cxx11::list<TemplateSimplifier::TokenAndName, std::allocator<TemplateSimplifier::TokenAndName> >&, std::set<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&) ()
+#2  0x000055555568d8bc in TemplateSimplifier::simplifyTemplates(TokenList&, ErrorLogger*, Settings const*, long, bool&) ()
+#3  0x00005555556ab52b in Tokenizer::simplifyTemplates() ()
+#4  0x00005555556c959f in Tokenizer::simplifyTokenList1(char const*) ()
+#5  0x00005555556c976a in Tokenizer::simplifyTokens1(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+#6  0x000055555564c6ac in CppCheck::processFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+#7  0x000055555564dee0 in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+#8  0x00005555556e6e24 in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+#9  0x00005555556e7614 in CppCheckExecutor::check(int, char const* const*) ()
+#10 0x00005555555b39e4 in main ()
