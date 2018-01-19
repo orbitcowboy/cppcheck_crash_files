@@ -1,0 +1,79 @@
+backtrace:
+#0  0x0000000000466b13 in isOppositeCond(bool, bool, Token const*, Token const*, Library const&, bool) ()
+No symbol table info available.
+#1  0x000000000048fcaf in CheckCondition::multiCondition2() ()
+No symbol table info available.
+#2  0x0000000000490023 in CheckCondition::runChecks(Tokenizer const*, Settings const*, ErrorLogger*) ()
+No symbol table info available.
+#3  0x00000000004f553a in CppCheck::checkNormalTokens(Tokenizer const&) ()
+No symbol table info available.
+#4  0x00000000004fec1a in CppCheck::processFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+No symbol table info available.
+#5  0x00000000004ff2a1 in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+No symbol table info available.
+#6  0x000000000059a9fa in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+No symbol table info available.
+#7  0x000000000059b14c in CppCheckExecutor::check(int, char const* const*) ()
+No symbol table info available.
+#8  0x0000000000462fc0 in main ()
+No symbol table info available.
+
+
+registers:
+rax            0x0	0
+rbx            0x83bf00	8634112
+rcx            0x4	4
+rdx            0x7fffffffb698	140737488336536
+rsi            0x83e630	8644144
+rdi            0x0	0
+rbp            0x83ccf0	0x83ccf0
+rsp            0x7fffffffb590	0x7fffffffb590
+r8             0x7fffffffd250	140737488343632
+r9             0x1	1
+r10            0x838c60	8621152
+r11            0x838c60	8621152
+r12            0x83e580	8643968
+r13            0x83e588	8643976
+r14            0x1	1
+r15            0x7fffffffd250	140737488343632
+rip            0x466b13	0x466b13 <isOppositeCond(bool, bool, Token const*, Token const*, Library const&, bool)+1508>
+eflags         0x10246	[ PF ZF IF RF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+gs             0x0	0
+
+
+current instructions:
+=> 0x466b13 <_Z14isOppositeCondbbPK5TokenS1_RK7Libraryb+1508>:	mov    0x98(%rax),%rdi
+   0x466b1a <_Z14isOppositeCondbbPK5TokenS1_RK7Libraryb+1515>:	mov    %rax,%r12
+   0x466b1d <_Z14isOppositeCondbbPK5TokenS1_RK7Libraryb+1518>:	callq  0x4647ce <_ZNK5Token16hasKnownIntValueEv.isra.41>
+   0x466b22 <_Z14isOppositeCondbbPK5TokenS1_RK7Libraryb+1523>:	test   %al,%al
+   0x466b24 <_Z14isOppositeCondbbPK5TokenS1_RK7Libraryb+1525>:	je     0x466b4e <_Z14isOppositeCondbbPK5TokenS1_RK7Libraryb+1567>
+   0x466b26 <_Z14isOppositeCondbbPK5TokenS1_RK7Libraryb+1527>:	mov    0xd8(%rsp),%rax
+   0x466b2e <_Z14isOppositeCondbbPK5TokenS1_RK7Libraryb+1535>:	mov    (%rax),%dl
+   0x466b30 <_Z14isOppositeCondbbPK5TokenS1_RK7Libraryb+1537>:	cmp    $0x3e,%dl
+   0x466b33 <_Z14isOppositeCondbbPK5TokenS1_RK7Libraryb+1540>:	jne    0x466b3d <_Z14isOppositeCondbbPK5TokenS1_RK7Libraryb+1550>
+   0x466b35 <_Z14isOppositeCondbbPK5TokenS1_RK7Libraryb+1542>:	movb   $0x3c,(%rax)
+   0x466b38 <_Z14isOppositeCondbbPK5TokenS1_RK7Libraryb+1545>:	jmpq   0x4667f4 <_Z14isOppositeCondbbPK5TokenS1_RK7Libraryb+709>
+   0x466b3d <_Z14isOppositeCondbbPK5TokenS1_RK7Libraryb+1550>:	cmp    $0x3c,%dl
+   0x466b40 <_Z14isOppositeCondbbPK5TokenS1_RK7Libraryb+1553>:	jne    0x4667f4 <_Z14isOppositeCondbbPK5TokenS1_RK7Libraryb+709>
+   0x466b46 <_Z14isOppositeCondbbPK5TokenS1_RK7Libraryb+1559>:	movb   $0x3e,(%rax)
+   0x466b49 <_Z14isOppositeCondbbPK5TokenS1_RK7Libraryb+1562>:	jmpq   0x4667f4 <_Z14isOppositeCondbbPK5TokenS1_RK7Libraryb+709>
+   0x466b4e <_Z14isOppositeCondbbPK5TokenS1_RK7Libraryb+1567>:	xor    %r12d,%r12d
+
+
+threads backtrace:
+
+Thread 1 (Thread 0x7ffff7fc2740 (LWP 2364)):
+#0  0x0000000000466b13 in isOppositeCond(bool, bool, Token const*, Token const*, Library const&, bool) ()
+#1  0x000000000048fcaf in CheckCondition::multiCondition2() ()
+#2  0x0000000000490023 in CheckCondition::runChecks(Tokenizer const*, Settings const*, ErrorLogger*) ()
+#3  0x00000000004f553a in CppCheck::checkNormalTokens(Tokenizer const&) ()
+#4  0x00000000004fec1a in CppCheck::processFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+#5  0x00000000004ff2a1 in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+#6  0x000000000059a9fa in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+#7  0x000000000059b14c in CppCheckExecutor::check(int, char const* const*) ()
+#8  0x0000000000462fc0 in main ()
