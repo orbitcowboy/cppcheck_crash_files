@@ -1,0 +1,76 @@
+backtrace:
+#0  0x00005555556e4274 in valueFlowAfterMove(TokenList*, SymbolDatabase*, ErrorLogger*, Settings const*) ()
+No symbol table info available.
+#1  0x00005555556e56ed in ValueFlow::setValues(TokenList*, SymbolDatabase*, ErrorLogger*, Settings const*) ()
+No symbol table info available.
+#2  0x00005555556cab9d in Tokenizer::simplifyTokenList2() ()
+No symbol table info available.
+#3  0x00005555556509e7 in CppCheck::processFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+No symbol table info available.
+#4  0x0000555555652032 in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+No symbol table info available.
+#5  0x00005555556eb8f4 in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+No symbol table info available.
+#6  0x00005555556ec0ea in CppCheckExecutor::check(int, char const* const*) ()
+No symbol table info available.
+#7  0x00005555555b47aa in main ()
+No symbol table info available.
+
+
+registers:
+rax            0x0	0
+rbx            0x55555598ea40	93824996665920
+rcx            0x4	4
+rdx            0x55555571115e	93824994054494
+rsi            0x7fffffffbb28	140737488337704
+rdi            0x5555559921e8	93824996680168
+rbp            0x7fffffffbd30	0x7fffffffbd30
+rsp            0x7fffffffbb60	0x7fffffffbb60
+r8             0x0	0
+r9             0x5	5
+r10            0x18	24
+r11            0x7ffff703cbe0	140737337609184
+r12            0x5555559921e8	93824996680168
+r13            0x55555598eba0	93824996666272
+r14            0x1	1
+r15            0x55555598bc70	93824996654192
+rip            0x5555556e4274	0x5555556e4274 <valueFlowAfterMove(TokenList*, SymbolDatabase*, ErrorLogger*, Settings const*)+3104>
+eflags         0x10246	[ PF ZF IF RF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+gs             0x0	0
+
+
+current instructions:
+=> 0x5555556e4274 <_ZL18valueFlowAfterMoveP9TokenListP14SymbolDatabaseP11ErrorLoggerPK8Settings+3104>:	cmp    0x50(%rax),%ecx
+   0x5555556e4277 <_ZL18valueFlowAfterMoveP9TokenListP14SymbolDatabaseP11ErrorLoggerPK8Settings+3107>:	jne    0x5555556e3da1 <_ZL18valueFlowAfterMoveP9TokenListP14SymbolDatabaseP11ErrorLoggerPK8Settings+1869>
+   0x5555556e427d <_ZL18valueFlowAfterMoveP9TokenListP14SymbolDatabaseP11ErrorLoggerPK8Settings+3113>:	jmpq   0x5555556e3ef1 <_ZL18valueFlowAfterMoveP9TokenListP14SymbolDatabaseP11ErrorLoggerPK8Settings+2205>
+   0x5555556e4282 <_ZL18valueFlowAfterMoveP9TokenListP14SymbolDatabaseP11ErrorLoggerPK8Settings+3118>:	mov    0x80(%rbx),%r14
+   0x5555556e4289 <_ZL18valueFlowAfterMoveP9TokenListP14SymbolDatabaseP11ErrorLoggerPK8Settings+3125>:	lea    0x2cece(%rip),%r13        # 0x55555571115e
+   0x5555556e4290 <_ZL18valueFlowAfterMoveP9TokenListP14SymbolDatabaseP11ErrorLoggerPK8Settings+3132>:	lea    -0x168(%rbp),%rbx
+   0x5555556e4297 <_ZL18valueFlowAfterMoveP9TokenListP14SymbolDatabaseP11ErrorLoggerPK8Settings+3139>:	test   %r14,%r14
+   0x5555556e429a <_ZL18valueFlowAfterMoveP9TokenListP14SymbolDatabaseP11ErrorLoggerPK8Settings+3142>:	je     0x5555556e3ed5 <_ZL18valueFlowAfterMoveP9TokenListP14SymbolDatabaseP11ErrorLoggerPK8Settings+2177>
+   0x5555556e42a0 <_ZL18valueFlowAfterMoveP9TokenListP14SymbolDatabaseP11ErrorLoggerPK8Settings+3148>:	mov    %r14,%rdi
+   0x5555556e42a3 <_ZL18valueFlowAfterMoveP9TokenListP14SymbolDatabaseP11ErrorLoggerPK8Settings+3151>:	callq  0x55555568760c <_ZNK5Token4isOpEv>
+   0x5555556e42a8 <_ZL18valueFlowAfterMoveP9TokenListP14SymbolDatabaseP11ErrorLoggerPK8Settings+3156>:	test   %al,%al
+   0x5555556e42aa <_ZL18valueFlowAfterMoveP9TokenListP14SymbolDatabaseP11ErrorLoggerPK8Settings+3158>:	jne    0x5555556e42cc <_ZL18valueFlowAfterMoveP9TokenListP14SymbolDatabaseP11ErrorLoggerPK8Settings+3192>
+   0x5555556e42ac <_ZL18valueFlowAfterMoveP9TokenListP14SymbolDatabaseP11ErrorLoggerPK8Settings+3160>:	lea    0x8(%r14),%rdi
+   0x5555556e42b0 <_ZL18valueFlowAfterMoveP9TokenListP14SymbolDatabaseP11ErrorLoggerPK8Settings+3164>:	mov    %rbx,%rsi
+   0x5555556e42b3 <_ZL18valueFlowAfterMoveP9TokenListP14SymbolDatabaseP11ErrorLoggerPK8Settings+3167>:	mov    %r13,-0x168(%rbp)
+   0x5555556e42ba <_ZL18valueFlowAfterMoveP9TokenListP14SymbolDatabaseP11ErrorLoggerPK8Settings+3174>:	callq  0x5555555b6889 <_ZN13MatchCompilerneILj2EEEbRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS_11ConstStringIXT_EEE>
+
+
+threads backtrace:
+
+Thread 1 (Thread 0x7ffff7fc6740 (LWP 33499)):
+#0  0x00005555556e4274 in valueFlowAfterMove(TokenList*, SymbolDatabase*, ErrorLogger*, Settings const*) ()
+#1  0x00005555556e56ed in ValueFlow::setValues(TokenList*, SymbolDatabase*, ErrorLogger*, Settings const*) ()
+#2  0x00005555556cab9d in Tokenizer::simplifyTokenList2() ()
+#3  0x00005555556509e7 in CppCheck::processFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+#4  0x0000555555652032 in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+#5  0x00005555556eb8f4 in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+#6  0x00005555556ec0ea in CppCheckExecutor::check(int, char const* const*) ()
+#7  0x00005555555b47aa in main ()
