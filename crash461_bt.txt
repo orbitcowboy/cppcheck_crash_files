@@ -1,0 +1,79 @@
+backtrace:
+#0  0x000055555569cb80 in Tokenizer::isFunctionHead(Token const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) ()
+No symbol table info available.
+#1  0x00005555556a049b in Tokenizer::startOfExecutableScope(Token const*) ()
+No symbol table info available.
+#2  0x00005555556c6c3f in Tokenizer::simplifyKnownVariables() ()
+No symbol table info available.
+#3  0x00005555556cb123 in Tokenizer::simplifyTokenList2() ()
+No symbol table info available.
+#4  0x00005555556510bf in CppCheck::processFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+No symbol table info available.
+#5  0x000055555565270a in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+No symbol table info available.
+#6  0x00005555556ebfcc in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+No symbol table info available.
+#7  0x00005555556ec7c2 in CppCheckExecutor::check(int, char const* const*) ()
+No symbol table info available.
+#8  0x00005555555b4a9a in main ()
+No symbol table info available.
+
+
+registers:
+rax            0x0	0
+rbx            0x555555989220	93824996643360
+rcx            0x555555989238	93824996643384
+rdx            0x55555570e994	93824994044308
+rsi            0x7fffffffbc5b	140737488338011
+rdi            0x555555989228	93824996643368
+rbp            0x7fffffffbcf0	0x7fffffffbcf0
+rsp            0x7fffffffbca0	0x7fffffffbca0
+r8             0x1	1
+r9             0x555555989ec0	93824996646592
+r10            0xffffffffffffff90	-112
+r11            0x7ffff7b62080	140737349296256
+r12            0x555555989228	93824996643368
+r13            0x55555570e994	93824994044308
+r14            0x5555557018af	93824993990831
+r15            0x1	1
+rip            0x55555569cb80	0x55555569cb80 <Tokenizer::isFunctionHead(Token const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool)+352>
+eflags         0x10202	[ IF RF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+gs             0x0	0
+
+
+current instructions:
+=> 0x55555569cb80 <_ZN9Tokenizer14isFunctionHeadEPK5TokenRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEb+352>:	mov    0x28(%rax),%rbx
+   0x55555569cb84 <_ZN9Tokenizer14isFunctionHeadEPK5TokenRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEb+356>:	jmp    0x55555569cb57 <_ZN9Tokenizer14isFunctionHeadEPK5TokenRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEb+311>
+   0x55555569cb86 <_ZN9Tokenizer14isFunctionHeadEPK5TokenRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEb+358>:	test   %r15b,%r15b
+   0x55555569cb89 <_ZN9Tokenizer14isFunctionHeadEPK5TokenRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEb+361>:	jne    0x55555569cb92 <_ZN9Tokenizer14isFunctionHeadEPK5TokenRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEb+370>
+   0x55555569cb8b <_ZN9Tokenizer14isFunctionHeadEPK5TokenRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEb+363>:	xor    %ebx,%ebx
+   0x55555569cb8d <_ZN9Tokenizer14isFunctionHeadEPK5TokenRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEb+365>:	jmpq   0x55555569cf65 <_ZN9Tokenizer14isFunctionHeadEPK5TokenRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEb+1349>
+   0x55555569cb92 <_ZN9Tokenizer14isFunctionHeadEPK5TokenRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEb+370>:	lea    0x64d16(%rip),%r14        # 0x5555557018af
+   0x55555569cb99 <_ZN9Tokenizer14isFunctionHeadEPK5TokenRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEb+377>:	lea    0x8(%r13),%rdi
+   0x55555569cb9d <_ZN9Tokenizer14isFunctionHeadEPK5TokenRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEb+381>:	mov    %rbp,%rsi
+   0x55555569cba0 <_ZN9Tokenizer14isFunctionHeadEPK5TokenRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEb+384>:	mov    %r14,0x50(%rsp)
+   0x55555569cba5 <_ZN9Tokenizer14isFunctionHeadEPK5TokenRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEb+389>:	callq  0x5555555b651b <_ZN13MatchCompilereqILj2EEEbRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS_11ConstStringIXT_EEE>
+   0x55555569cbaa <_ZN9Tokenizer14isFunctionHeadEPK5TokenRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEb+394>:	test   %al,%al
+   0x55555569cbac <_ZN9Tokenizer14isFunctionHeadEPK5TokenRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEb+396>:	je     0x55555569cb8b <_ZN9Tokenizer14isFunctionHeadEPK5TokenRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEb+363>
+   0x55555569cbae <_ZN9Tokenizer14isFunctionHeadEPK5TokenRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEb+398>:	mov    0x28(%r13),%rbx
+   0x55555569cbb2 <_ZN9Tokenizer14isFunctionHeadEPK5TokenRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEb+402>:	lea    0x743b5(%rip),%r15        # 0x555555710f6e
+   0x55555569cbb9 <_ZN9Tokenizer14isFunctionHeadEPK5TokenRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEb+409>:	test   %rbx,%rbx
+
+
+threads backtrace:
+
+Thread 1 (Thread 0x7ffff7fc6740 (LWP 76345)):
+#0  0x000055555569cb80 in Tokenizer::isFunctionHead(Token const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) ()
+#1  0x00005555556a049b in Tokenizer::startOfExecutableScope(Token const*) ()
+#2  0x00005555556c6c3f in Tokenizer::simplifyKnownVariables() ()
+#3  0x00005555556cb123 in Tokenizer::simplifyTokenList2() ()
+#4  0x00005555556510bf in CppCheck::processFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+#5  0x000055555565270a in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+#6  0x00005555556ebfcc in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+#7  0x00005555556ec7c2 in CppCheckExecutor::check(int, char const* const*) ()
+#8  0x00005555555b4a9a in main ()
