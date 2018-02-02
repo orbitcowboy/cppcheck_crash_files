@@ -1,0 +1,73 @@
+backtrace:
+#0  0x00005555556a78e6 in Tokenizer::simplifyRealloc() ()
+No symbol table info available.
+#1  0x00005555556cb05d in Tokenizer::simplifyTokenList2() ()
+No symbol table info available.
+#2  0x00005555556510bf in CppCheck::processFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+No symbol table info available.
+#3  0x000055555565270a in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+No symbol table info available.
+#4  0x00005555556ebfcc in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+No symbol table info available.
+#5  0x00005555556ec7c2 in CppCheckExecutor::check(int, char const* const*) ()
+No symbol table info available.
+#6  0x00005555555b4a9a in main ()
+No symbol table info available.
+
+
+registers:
+rax            0x1	1
+rbx            0x0	0
+rcx            0x555555989598	93824996644248
+rdx            0x0	0
+rsi            0x7fffffffbf28	140737488338728
+rdi            0x555555989588	93824996644232
+rbp            0x0	0x0
+rsp            0x7fffffffbfd0	0x7fffffffbfd0
+r8             0x555555989790	93824996644752
+r9             0x7ffff7b56720	140737349248800
+r10            0xffffffffffffff90	-112
+r11            0x7ffff7b62080	140737349296256
+r12            0x7fffffffc068	140737488339048
+r13            0x0	0
+r14            0x55555570e979	93824994044281
+r15            0x55555598a3d8	93824996647896
+rip            0x5555556a78e6	0x5555556a78e6 <Tokenizer::simplifyRealloc()+924>
+eflags         0x10202	[ IF RF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+gs             0x0	0
+
+
+current instructions:
+=> 0x5555556a78e6 <_ZN9Tokenizer15simplifyReallocEv+924>:	mov    0x28(%rbx),%rbx
+   0x5555556a78ea <_ZN9Tokenizer15simplifyReallocEv+928>:	jmpq   0x5555556a7572 <_ZN9Tokenizer15simplifyReallocEv+40>
+   0x5555556a78ef <_ZN9Tokenizer15simplifyReallocEv+933>:	jmp    0x5555556a78f1 <_ZN9Tokenizer15simplifyReallocEv+935>
+   0x5555556a78f1 <_ZN9Tokenizer15simplifyReallocEv+935>:	mov    %rax,%rbp
+   0x5555556a78f4 <_ZN9Tokenizer15simplifyReallocEv+938>:	mov    %rbx,%rdi
+   0x5555556a78f7 <_ZN9Tokenizer15simplifyReallocEv+941>:	callq  0x5555555abda0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+   0x5555556a78fc <_ZN9Tokenizer15simplifyReallocEv+946>:	mov    %rbp,%rdi
+   0x5555556a78ff <_ZN9Tokenizer15simplifyReallocEv+949>:	callq  0x5555555ac1a0 <_Unwind_Resume@plt>
+   0x5555556a7904 <_ZN9Tokenizer15simplifyReallocEv+954>:	mov    0x38(%rsp),%rax
+   0x5555556a7909 <_ZN9Tokenizer15simplifyReallocEv+959>:	xor    %fs:0x28,%rax
+   0x5555556a7912 <_ZN9Tokenizer15simplifyReallocEv+968>:	je     0x5555556a7919 <_ZN9Tokenizer15simplifyReallocEv+975>
+   0x5555556a7914 <_ZN9Tokenizer15simplifyReallocEv+970>:	callq  0x5555555abc50 <__stack_chk_fail@plt>
+   0x5555556a7919 <_ZN9Tokenizer15simplifyReallocEv+975>:	add    $0x48,%rsp
+   0x5555556a791d <_ZN9Tokenizer15simplifyReallocEv+979>:	pop    %rbx
+   0x5555556a791e <_ZN9Tokenizer15simplifyReallocEv+980>:	pop    %rbp
+   0x5555556a791f <_ZN9Tokenizer15simplifyReallocEv+981>:	pop    %r12
+
+
+threads backtrace:
+
+Thread 1 (Thread 0x7ffff7fc6740 (LWP 49102)):
+#0  0x00005555556a78e6 in Tokenizer::simplifyRealloc() ()
+#1  0x00005555556cb05d in Tokenizer::simplifyTokenList2() ()
+#2  0x00005555556510bf in CppCheck::processFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+#3  0x000055555565270a in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+#4  0x00005555556ebfcc in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+#5  0x00005555556ec7c2 in CppCheckExecutor::check(int, char const* const*) ()
+#6  0x00005555555b4a9a in main ()
