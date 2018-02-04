@@ -1,0 +1,85 @@
+backtrace:
+#0  0x000055555565b14c in Library::getFunctionName[abi:cxx11](Token const*, bool*) const ()
+No symbol table info available.
+#1  0x000055555565b46e in Library::getFunctionName[abi:cxx11](Token const*) const ()
+No symbol table info available.
+#2  0x000055555565b644 in Library::isNotLibraryFunction(Token const*) const ()
+No symbol table info available.
+#3  0x000055555565bb7f in Library::returnValueType[abi:cxx11](Token const*) const ()
+No symbol table info available.
+#4  0x00005555556873f3 in SymbolDatabase::setValueTypeInTokenList() ()
+No symbol table info available.
+#5  0x00005555556ce851 in Tokenizer::simplifyTokens1(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+No symbol table info available.
+#6  0x0000555555650fae in CppCheck::processFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+No symbol table info available.
+#7  0x00005555556527e2 in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+No symbol table info available.
+#8  0x00005555556ec0ae in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+No symbol table info available.
+#9  0x00005555556ec8a4 in CppCheckExecutor::check(int, char const* const*) ()
+No symbol table info available.
+#10 0x00005555555b4a9a in main ()
+No symbol table info available.
+
+
+registers:
+rax            0x1	1
+rbx            0x555555993960	93824996686176
+rcx            0x7fffffffbca0	140737488338080
+rdx            0x555555993960	93824996686176
+rsi            0x7fffffffd540	140737488344384
+rdi            0x7fffffffbce8	140737488338152
+rbp            0x7fffffffbce8	0x7fffffffbce8
+rsp            0x7fffffffbbd0	0x7fffffffbbd0
+r8             0x0	0
+r9             0x555555997120	93824996700448
+r10            0xffffffffffffff90	-112
+r11            0x7ffff726ac78	140737339894904
+r12            0x7fffffffbca0	140737488338080
+r13            0x7fffffffd540	140737488344384
+r14            0x555555996b10	93824996698896
+r15            0x0	0
+rip            0x55555565b14c	0x55555565b14c <Library::getFunctionName[abi:cxx11](Token const*, bool*) const+122>
+eflags         0x10246	[ PF ZF IF RF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+gs             0x0	0
+
+
+current instructions:
+=> 0x55555565b14c <_ZNK7Library15getFunctionNameB5cxx11EPK5TokenPb+122>:	mov    0x20(%r15),%rsi
+   0x55555565b150 <_ZNK7Library15getFunctionNameB5cxx11EPK5TokenPb+126>:	mov    0x28(%r15),%rax
+   0x55555565b154 <_ZNK7Library15getFunctionNameB5cxx11EPK5TokenPb+130>:	movabs $0x6db6db6db6db6db7,%rcx
+   0x55555565b15e <_ZNK7Library15getFunctionNameB5cxx11EPK5TokenPb+140>:	mov    0x14(%rsp),%edx
+   0x55555565b162 <_ZNK7Library15getFunctionNameB5cxx11EPK5TokenPb+144>:	sub    %rsi,%rax
+   0x55555565b165 <_ZNK7Library15getFunctionNameB5cxx11EPK5TokenPb+147>:	sar    $0x3,%rax
+   0x55555565b169 <_ZNK7Library15getFunctionNameB5cxx11EPK5TokenPb+151>:	imul   %rcx,%rax
+   0x55555565b16d <_ZNK7Library15getFunctionNameB5cxx11EPK5TokenPb+155>:	cmp    %rax,%rdx
+   0x55555565b170 <_ZNK7Library15getFunctionNameB5cxx11EPK5TokenPb+158>:	jae    0x55555565b20a <_ZNK7Library15getFunctionNameB5cxx11EPK5TokenPb+312>
+   0x55555565b176 <_ZNK7Library15getFunctionNameB5cxx11EPK5TokenPb+164>:	imul   $0x38,%rdx,%rdx
+   0x55555565b17a <_ZNK7Library15getFunctionNameB5cxx11EPK5TokenPb+168>:	lea    0x68(%rsp),%rax
+   0x55555565b17f <_ZNK7Library15getFunctionNameB5cxx11EPK5TokenPb+173>:	mov    %rax,%rdi
+   0x55555565b182 <_ZNK7Library15getFunctionNameB5cxx11EPK5TokenPb+176>:	mov    %rax,0x8(%rsp)
+   0x55555565b187 <_ZNK7Library15getFunctionNameB5cxx11EPK5TokenPb+181>:	add    %rdx,%rsi
+   0x55555565b18a <_ZNK7Library15getFunctionNameB5cxx11EPK5TokenPb+184>:	lea    0xb762a(%rip),%rdx        # 0x5555557127bb
+   0x55555565b191 <_ZNK7Library15getFunctionNameB5cxx11EPK5TokenPb+191>:	callq  0x5555555c0bb3 <_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EERKS8_PKS5_>
+
+
+threads backtrace:
+
+Thread 1 (Thread 0x7ffff7fc6740 (LWP 4043)):
+#0  0x000055555565b14c in Library::getFunctionName[abi:cxx11](Token const*, bool*) const ()
+#1  0x000055555565b46e in Library::getFunctionName[abi:cxx11](Token const*) const ()
+#2  0x000055555565b644 in Library::isNotLibraryFunction(Token const*) const ()
+#3  0x000055555565bb7f in Library::returnValueType[abi:cxx11](Token const*) const ()
+#4  0x00005555556873f3 in SymbolDatabase::setValueTypeInTokenList() ()
+#5  0x00005555556ce851 in Tokenizer::simplifyTokens1(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+#6  0x0000555555650fae in CppCheck::processFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+#7  0x00005555556527e2 in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+#8  0x00005555556ec0ae in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+#9  0x00005555556ec8a4 in CppCheckExecutor::check(int, char const* const*) ()
+#10 0x00005555555b4a9a in main ()
