@@ -1,0 +1,79 @@
+backtrace:
+#0  0x00005555555f98bb in CheckLeakAutoVar::checkScope(Token const*, VarInfo*, std::set<unsigned int, std::less<unsigned int>, std::allocator<unsigned int> >) ()
+No symbol table info available.
+#1  0x00005555555f99e8 in CheckLeakAutoVar::check() ()
+No symbol table info available.
+#2  0x00005555555f9b7f in CheckLeakAutoVar::runSimplifiedChecks(Tokenizer const*, Settings const*, ErrorLogger*) ()
+No symbol table info available.
+#3  0x0000555555649c9b in CppCheck::checkSimplifiedTokens(Tokenizer const&) ()
+No symbol table info available.
+#4  0x0000555555651d2d in CppCheck::checkFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+No symbol table info available.
+#5  0x000055555565368b in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+No symbol table info available.
+#6  0x00005555556f1d50 in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+No symbol table info available.
+#7  0x00005555556f25bf in CppCheckExecutor::check(int, char const* const*) ()
+No symbol table info available.
+#8  0x00005555555b50ba in main ()
+No symbol table info available.
+
+
+registers:
+rax            0x5555559a9910	93824996776208
+rbx            0x5555559aaae0	93824996780768
+rcx            0x5555559aaa48	93824996780616
+rdx            0x5555559aaae0	93824996780768
+rsi            0x7fffffffb926	140737488337190
+rdi            0x5555559aaa38	93824996780600
+rbp            0x7fffffffb9a8	0x7fffffffb9a8
+rsp            0x7fffffffb740	0x7fffffffb740
+r8             0x0	0
+r9             0x5555559a38c0	93824996751552
+r10            0x0	0
+r11            0x1	1
+r12            0x5555559a4280	93824996754048
+r13            0x5555559aaae0	93824996780768
+r14            0x0	0
+r15            0x5555559a51f0	93824996758000
+rip            0x5555555f98bb	0x5555555f98bb <CheckLeakAutoVar::checkScope(Token const*, VarInfo*, std::set<unsigned int, std::less<unsigned int>, std::allocator<unsigned int> >)+9721>
+eflags         0x10202	[ IF RF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+gs             0x0	0
+
+
+current instructions:
+=> 0x5555555f98bb <_ZN16CheckLeakAutoVar10checkScopeEPK5TokenP7VarInfoSt3setIjSt4lessIjESaIjEE+9721>:	mov    0x30(%r14),%r13
+   0x5555555f98bf <_ZN16CheckLeakAutoVar10checkScopeEPK5TokenP7VarInfoSt3setIjSt4lessIjESaIjEE+9725>:	cmp    %r13,0x38(%r14)
+   0x5555555f98c3 <_ZN16CheckLeakAutoVar10checkScopeEPK5TokenP7VarInfoSt3setIjSt4lessIjESaIjEE+9729>:	je     0x5555555f97ce <_ZN16CheckLeakAutoVar10checkScopeEPK5TokenP7VarInfoSt3setIjSt4lessIjESaIjEE+9484>
+   0x5555555f98c9 <_ZN16CheckLeakAutoVar10checkScopeEPK5TokenP7VarInfoSt3setIjSt4lessIjESaIjEE+9735>:	mov    0x10(%rsp),%rax
+   0x5555555f98ce <_ZN16CheckLeakAutoVar10checkScopeEPK5TokenP7VarInfoSt3setIjSt4lessIjESaIjEE+9740>:	mov    %r13,%rsi
+   0x5555555f98d1 <_ZN16CheckLeakAutoVar10checkScopeEPK5TokenP7VarInfoSt3setIjSt4lessIjESaIjEE+9743>:	mov    0x10(%rax),%rax
+   0x5555555f98d5 <_ZN16CheckLeakAutoVar10checkScopeEPK5TokenP7VarInfoSt3setIjSt4lessIjESaIjEE+9747>:	lea    0x258(%rax),%rdi
+   0x5555555f98dc <_ZN16CheckLeakAutoVar10checkScopeEPK5TokenP7VarInfoSt3setIjSt4lessIjESaIjEE+9754>:	mov    %rax,0x38(%rsp)
+   0x5555555f98e1 <_ZN16CheckLeakAutoVar10checkScopeEPK5TokenP7VarInfoSt3setIjSt4lessIjESaIjEE+9759>:	callq  0x55555565dd06 <_ZNK7Library7deallocEPK5Token>
+   0x5555555f98e6 <_ZN16CheckLeakAutoVar10checkScopeEPK5TokenP7VarInfoSt3setIjSt4lessIjESaIjEE+9764>:	test   %rax,%rax
+   0x5555555f98e9 <_ZN16CheckLeakAutoVar10checkScopeEPK5TokenP7VarInfoSt3setIjSt4lessIjESaIjEE+9767>:	mov    %rax,%r12
+   0x5555555f98ec <_ZN16CheckLeakAutoVar10checkScopeEPK5TokenP7VarInfoSt3setIjSt4lessIjESaIjEE+9770>:	jne    0x5555555f96d1 <_ZN16CheckLeakAutoVar10checkScopeEPK5TokenP7VarInfoSt3setIjSt4lessIjESaIjEE+9231>
+   0x5555555f98f2 <_ZN16CheckLeakAutoVar10checkScopeEPK5TokenP7VarInfoSt3setIjSt4lessIjESaIjEE+9776>:	mov    0x28(%r13),%r13
+   0x5555555f98f6 <_ZN16CheckLeakAutoVar10checkScopeEPK5TokenP7VarInfoSt3setIjSt4lessIjESaIjEE+9780>:	jmp    0x5555555f98bf <_ZN16CheckLeakAutoVar10checkScopeEPK5TokenP7VarInfoSt3setIjSt4lessIjESaIjEE+9725>
+   0x5555555f98f8 <_ZN16CheckLeakAutoVar10checkScopeEPK5TokenP7VarInfoSt3setIjSt4lessIjESaIjEE+9782>:	mov    0x98,%rax
+   0x5555555f9900 <_ZN16CheckLeakAutoVar10checkScopeEPK5TokenP7VarInfoSt3setIjSt4lessIjESaIjEE+9790>:	ud2    
+
+
+threads backtrace:
+
+Thread 1 (Thread 0x7ffff7fc5740 (LWP 30008)):
+#0  0x00005555555f98bb in CheckLeakAutoVar::checkScope(Token const*, VarInfo*, std::set<unsigned int, std::less<unsigned int>, std::allocator<unsigned int> >) ()
+#1  0x00005555555f99e8 in CheckLeakAutoVar::check() ()
+#2  0x00005555555f9b7f in CheckLeakAutoVar::runSimplifiedChecks(Tokenizer const*, Settings const*, ErrorLogger*) ()
+#3  0x0000555555649c9b in CppCheck::checkSimplifiedTokens(Tokenizer const&) ()
+#4  0x0000555555651d2d in CppCheck::checkFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+#5  0x000055555565368b in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+#6  0x00005555556f1d50 in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+#7  0x00005555556f25bf in CppCheckExecutor::check(int, char const* const*) ()
+#8  0x00005555555b50ba in main ()
