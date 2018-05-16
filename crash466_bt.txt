@@ -1,0 +1,90 @@
+backtrace:
+#0  tcache_get (tc_idx=<optimized out>) at malloc.c:2978
+        e = 0x36373538343031
+#1  __GI___libc_malloc (bytes=40) at malloc.c:3079
+        ar_ptr = <optimized out>
+        victim = <optimized out>
+        hook = <optimized out>
+#2  0x00007ffff786d458 in operator new(unsigned long) () from /usr/lib/x86_64-linux-gnu/libstdc++.so.6
+No symbol table info available.
+#3  0x00005555556d4969 in std::_Rb_tree_iterator<Token const*> std::_Rb_tree<Token const*, Token const*, std::_Identity<Token const*>, std::less<Token const*>, std::allocator<Token const*> >::_M_insert_<Token const* const&, std::_Rb_tree<Token const*, Token const*, std::_Identity<Token const*>, std::less<Token const*>, std::allocator<Token const*> >::_Alloc_node>(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, Token const* const&, std::_Rb_tree<Token const*, Token const*, std::_Identity<Token const*>, std::less<Token const*>, std::allocator<Token const*> >::_Alloc_node&) [clone .isra.162] ()
+No symbol table info available.
+#4  0x00005555556da00a in std::set<Token const*, std::less<Token const*>, std::allocator<Token const*> >::insert(Token const* const&) ()
+No symbol table info available.
+#5  0x00005555556da973 in TokenList::validateAst() const ()
+No symbol table info available.
+#6  0x00005555556d116e in Tokenizer::simplifyTokenList2() ()
+No symbol table info available.
+#7  0x000055555565273d in CppCheck::checkFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+No symbol table info available.
+#8  0x00005555556543df in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+No symbol table info available.
+#9  0x00005555556f2c78 in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+No symbol table info available.
+#10 0x00005555556f34e7 in CppCheckExecutor::check(int, char const* const*) ()
+No symbol table info available.
+#11 0x00005555555b5cf2 in main ()
+No symbol table info available.
+
+
+registers:
+rax            0x55555596a010	93824996515856
+rbx            0x1	1
+rcx            0x55555596a018	93824996515864
+rdx            0x36373538343031	15260350458114097
+rsi            0x0	0
+rdi            0x28	40
+rbp            0x28	0x28
+rsp            0x7fffffffbfe0	0x7fffffffbfe0
+r8             0x5555559a4a40	93824996756032
+r9             0x5555559a3420	93824996750368
+r10            0x105a	4186
+r11            0x7ffff703cbe0	140737337609184
+r12            0xffffffffffffff90	-112
+r13            0x7fffffffc088	140737488339080
+r14            0x555555717db1	93824994082225
+r15            0x5555559a8c50	93824996772944
+rip            0x7ffff6f1f03b	0x7ffff6f1f03b <__GI___libc_malloc+395>
+eflags         0x10293	[ CF AF SF IF RF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+gs             0x0	0
+
+
+current instructions:
+=> 0x7ffff6f1f03b <__GI___libc_malloc+395>:	mov    (%rdx),%rsi
+   0x7ffff6f1f03e <__GI___libc_malloc+398>:	mov    %rsi,0x40(%rcx)
+   0x7ffff6f1f042 <__GI___libc_malloc+402>:	subb   $0x1,(%rax,%rbx,1)
+   0x7ffff6f1f046 <__GI___libc_malloc+406>:	pop    %rbx
+   0x7ffff6f1f047 <__GI___libc_malloc+407>:	mov    %rdx,%rax
+   0x7ffff6f1f04a <__GI___libc_malloc+410>:	pop    %rbp
+   0x7ffff6f1f04b <__GI___libc_malloc+411>:	pop    %r12
+   0x7ffff6f1f04d <__GI___libc_malloc+413>:	retq   
+   0x7ffff6f1f04e <__GI___libc_malloc+414>:	xchg   %ax,%ax
+   0x7ffff6f1f050 <__GI___libc_malloc+416>:	mov    $0x1,%esi
+   0x7ffff6f1f055 <__GI___libc_malloc+421>:	cmpl   $0x0,0x3507c4(%rip)        # 0x7ffff726f820 <__libc_multiple_threads>
+   0x7ffff6f1f05c <__GI___libc_malloc+428>:	je     0x7ffff6f1f066 <__GI___libc_malloc+438>
+   0x7ffff6f1f05e <__GI___libc_malloc+430>:	lock cmpxchg %esi,(%rbx)
+   0x7ffff6f1f062 <__GI___libc_malloc+434>:	jne    0x7ffff6f1f06b <__GI___libc_malloc+443>
+   0x7ffff6f1f064 <__GI___libc_malloc+436>:	jmp    0x7ffff6f1f081 <__GI___libc_malloc+465>
+   0x7ffff6f1f066 <__GI___libc_malloc+438>:	cmpxchg %esi,(%rbx)
+
+
+threads backtrace:
+
+Thread 1 (Thread 0x7ffff7fc6740 (LWP 115598)):
+#0  tcache_get (tc_idx=<optimized out>) at malloc.c:2978
+#1  __GI___libc_malloc (bytes=40) at malloc.c:3079
+#2  0x00007ffff786d458 in operator new(unsigned long) () from /usr/lib/x86_64-linux-gnu/libstdc++.so.6
+#3  0x00005555556d4969 in std::_Rb_tree_iterator<Token const*> std::_Rb_tree<Token const*, Token const*, std::_Identity<Token const*>, std::less<Token const*>, std::allocator<Token const*> >::_M_insert_<Token const* const&, std::_Rb_tree<Token const*, Token const*, std::_Identity<Token const*>, std::less<Token const*>, std::allocator<Token const*> >::_Alloc_node>(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, Token const* const&, std::_Rb_tree<Token const*, Token const*, std::_Identity<Token const*>, std::less<Token const*>, std::allocator<Token const*> >::_Alloc_node&) [clone .isra.162] ()
+#4  0x00005555556da00a in std::set<Token const*, std::less<Token const*>, std::allocator<Token const*> >::insert(Token const* const&) ()
+#5  0x00005555556da973 in TokenList::validateAst() const ()
+#6  0x00005555556d116e in Tokenizer::simplifyTokenList2() ()
+#7  0x000055555565273d in CppCheck::checkFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+#8  0x00005555556543df in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+#9  0x00005555556f2c78 in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+#10 0x00005555556f34e7 in CppCheckExecutor::check(int, char const* const*) ()
+#11 0x00005555555b5cf2 in main ()
