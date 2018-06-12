@@ -1,0 +1,91 @@
+backtrace:
+#0  0x000055555569e30a in Token::stringifyList(bool, bool, bool, bool, bool, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const*, Token const*) const ()
+No symbol table info available.
+#1  0x000055555569e671 in Token::stringifyList[abi:cxx11](Token const*, bool) const ()
+No symbol table info available.
+#2  0x00005555555b81c1 in isUniqueExpression(Token const*) ()
+No symbol table info available.
+#3  0x00005555555b8415 in isUniqueExpression(Token const*) ()
+No symbol table info available.
+#4  0x00005555555b8408 in isUniqueExpression(Token const*) ()
+No symbol table info available.
+#5  0x0000555555622494 in CheckOther::checkDuplicateExpression() ()
+No symbol table info available.
+#6  0x0000555555622ccf in CheckOther::runChecks(Tokenizer const*, Settings const*, ErrorLogger*) ()
+No symbol table info available.
+#7  0x000055555564b57b in CppCheck::checkNormalTokens(Tokenizer const&) ()
+No symbol table info available.
+#8  0x00005555556533ca in CppCheck::checkFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+No symbol table info available.
+#9  0x00005555556552e1 in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+No symbol table info available.
+#10 0x00005555556f57b6 in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+No symbol table info available.
+#11 0x00005555556f6025 in CppCheckExecutor::check(int, char const* const*) ()
+No symbol table info available.
+#12 0x00005555555b5f2e in main ()
+No symbol table info available.
+
+
+registers:
+rax            0x0	0
+rbx            0x7fffffffbb98	140737488337816
+rcx            0x6	6
+rdx            0x7ffff7b61040	140737349292096
+rsi            0x7fffffffb820	140737488336928
+rdi            0x6	6
+rbp            0x5555559aa4d0	0x5555559aa4d0
+rsp            0x7fffffffb8f0	0x7fffffffb8f0
+r8             0x7ffff7b61040	140737349292096
+r9             0x7ffff7b55660	140737349244512
+r10            0x8	8
+r11            0x7ffff78f1560	140737346737504
+r12            0x5555559b0250	93824996803152
+r13            0x7fffffffbb78	140737488337784
+r14            0x0	0
+r15            0x0	0
+rip            0x55555569e30a	0x55555569e30a <Token::stringifyList(bool, bool, bool, bool, bool, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const*, Token const*) const+162>
+eflags         0x10202	[ IF RF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+gs             0x0	0
+
+
+current instructions:
+=> 0x55555569e30a <_ZNK5Token13stringifyListEbbbbbPKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS6_EEPKS_+162>:	mov    0x58(%r14),%r12d
+   0x55555569e30e <_ZNK5Token13stringifyListEbbbbbPKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS6_EEPKS_+166>:	sub    %eax,%r12d
+   0x55555569e311 <_ZNK5Token13stringifyListEbbbbbPKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS6_EEPKS_+169>:	or     $0xffffffff,%eax
+   0x55555569e314 <_ZNK5Token13stringifyListEbbbbbPKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS6_EEPKS_+172>:	cmpb   $0x0,0x1c(%rsp)
+   0x55555569e319 <_ZNK5Token13stringifyListEbbbbbPKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS6_EEPKS_+177>:	jne    0x55555569e31f <_ZNK5Token13stringifyListEbbbbbPKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS6_EEPKS_+183>
+   0x55555569e31b <_ZNK5Token13stringifyListEbbbbbPKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS6_EEPKS_+179>:	mov    0x54(%r14),%eax
+   0x55555569e31f <_ZNK5Token13stringifyListEbbbbbPKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS6_EEPKS_+183>:	lea    0x48(%rsp),%rdx
+   0x55555569e324 <_ZNK5Token13stringifyListEbbbbbPKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS6_EEPKS_+188>:	lea    0x70(%rsp),%rbp
+   0x55555569e329 <_ZNK5Token13stringifyListEbbbbbPKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS6_EEPKS_+193>:	movl   $0x0,0x48(%rsp)
+   0x55555569e331 <_ZNK5Token13stringifyListEbbbbbPKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS6_EEPKS_+201>:	movq   $0x0,0x50(%rsp)
+   0x55555569e33a <_ZNK5Token13stringifyListEbbbbbPKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS6_EEPKS_+210>:	movq   $0x0,0x68(%rsp)
+   0x55555569e343 <_ZNK5Token13stringifyListEbbbbbPKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS6_EEPKS_+219>:	mov    %r14,%rbx
+   0x55555569e346 <_ZNK5Token13stringifyListEbbbbbPKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS6_EEPKS_+222>:	mov    %rdx,0x58(%rsp)
+   0x55555569e34b <_ZNK5Token13stringifyListEbbbbbPKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS6_EEPKS_+227>:	mov    %rdx,0x60(%rsp)
+   0x55555569e350 <_ZNK5Token13stringifyListEbbbbbPKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS6_EEPKS_+232>:	mov    0x54(%rbx),%r13d
+   0x55555569e354 <_ZNK5Token13stringifyListEbbbbbPKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS6_EEPKS_+236>:	cmp    %eax,%r13d
+
+
+threads backtrace:
+
+Thread 1 (Thread 0x7ffff7fc6740 (LWP 11057)):
+#0  0x000055555569e30a in Token::stringifyList(bool, bool, bool, bool, bool, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const*, Token const*) const ()
+#1  0x000055555569e671 in Token::stringifyList[abi:cxx11](Token const*, bool) const ()
+#2  0x00005555555b81c1 in isUniqueExpression(Token const*) ()
+#3  0x00005555555b8415 in isUniqueExpression(Token const*) ()
+#4  0x00005555555b8408 in isUniqueExpression(Token const*) ()
+#5  0x0000555555622494 in CheckOther::checkDuplicateExpression() ()
+#6  0x0000555555622ccf in CheckOther::runChecks(Tokenizer const*, Settings const*, ErrorLogger*) ()
+#7  0x000055555564b57b in CppCheck::checkNormalTokens(Tokenizer const&) ()
+#8  0x00005555556533ca in CppCheck::checkFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+#9  0x00005555556552e1 in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+#10 0x00005555556f57b6 in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+#11 0x00005555556f6025 in CppCheckExecutor::check(int, char const* const*) ()
+#12 0x00005555555b5f2e in main ()
