@@ -1,0 +1,76 @@
+backtrace:
+#0  0x00005555555d0047 in CheckBufferOverrun::checkGlobalAndLocalVariable() ()
+No symbol table info available.
+#1  0x00005555555d021f in CheckBufferOverrun::runSimplifiedChecks(Tokenizer const*, Settings const*, ErrorLogger*) ()
+No symbol table info available.
+#2  0x000055555564efd9 in CppCheck::checkSimplifiedTokens(Tokenizer const&) ()
+No symbol table info available.
+#3  0x000055555565700a in CppCheck::checkFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+No symbol table info available.
+#4  0x0000555555658e5d in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+No symbol table info available.
+#5  0x00005555556fa9ec in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+No symbol table info available.
+#6  0x00005555556fb25b in CppCheckExecutor::check(int, char const* const*) ()
+No symbol table info available.
+#7  0x00005555555b62a4 in main ()
+No symbol table info available.
+
+
+registers:
+rax            0x5555559979b0	93824996702640
+rbx            0x5555559976f0	93824996701936
+rcx            0x5555559aee90	93824996798096
+rdx            0x5555559aee90	93824996798096
+rsi            0x0	0
+rdi            0x555555997850	93824996702288
+rbp            0x400	0x400
+rsp            0x7fffffffbd30	0x7fffffffbd30
+r8             0x15	21
+r9             0x1	1
+r10            0x10	16
+r11            0x1	1
+r12            0x5555559979b0	93824996702640
+r13            0x0	0
+r14            0x555555722a49	93824994126409
+r15            0x7fffffffbe98	140737488338584
+rip            0x5555555d0047	0x5555555d0047 <CheckBufferOverrun::checkGlobalAndLocalVariable()+3239>
+eflags         0x10206	[ PF IF RF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+gs             0x0	0
+
+
+current instructions:
+=> 0x5555555d0047 <_ZN18CheckBufferOverrun27checkGlobalAndLocalVariableEv+3239>:	mov    0x8(%r13),%rsi
+   0x5555555d004b <_ZN18CheckBufferOverrun27checkGlobalAndLocalVariableEv+3243>:	mov    %r15,%rdi
+   0x5555555d004e <_ZN18CheckBufferOverrun27checkGlobalAndLocalVariableEv+3246>:	callq  0x5555555c395a <_ZNK18CheckBufferOverrun10sizeOfTypeEPK5Token>
+   0x5555555d0053 <_ZN18CheckBufferOverrun27checkGlobalAndLocalVariableEv+3251>:	test   %eax,%eax
+   0x5555555d0055 <_ZN18CheckBufferOverrun27checkGlobalAndLocalVariableEv+3253>:	je     0x5555555d0074 <_ZN18CheckBufferOverrun27checkGlobalAndLocalVariableEv+3284>
+   0x5555555d0057 <_ZN18CheckBufferOverrun27checkGlobalAndLocalVariableEv+3255>:	movslq %eax,%rcx
+   0x5555555d005a <_ZN18CheckBufferOverrun27checkGlobalAndLocalVariableEv+3258>:	mov    %rbp,%rax
+   0x5555555d005d <_ZN18CheckBufferOverrun27checkGlobalAndLocalVariableEv+3261>:	cqto   
+   0x5555555d005f <_ZN18CheckBufferOverrun27checkGlobalAndLocalVariableEv+3263>:	idiv   %rcx
+   0x5555555d0062 <_ZN18CheckBufferOverrun27checkGlobalAndLocalVariableEv+3266>:	mov    %rax,%rbp
+   0x5555555d0065 <_ZN18CheckBufferOverrun27checkGlobalAndLocalVariableEv+3269>:	jmp    0x5555555d0074 <_ZN18CheckBufferOverrun27checkGlobalAndLocalVariableEv+3284>
+   0x5555555d0067 <_ZN18CheckBufferOverrun27checkGlobalAndLocalVariableEv+3271>:	mov    %rbx,%rsi
+   0x5555555d006a <_ZN18CheckBufferOverrun27checkGlobalAndLocalVariableEv+3274>:	mov    %r15,%rdi
+   0x5555555d006d <_ZN18CheckBufferOverrun27checkGlobalAndLocalVariableEv+3277>:	callq  0x5555555c6e6a <_ZN18CheckBufferOverrun33negativeMemoryAllocationSizeErrorEPK5Token>
+   0x5555555d0072 <_ZN18CheckBufferOverrun27checkGlobalAndLocalVariableEv+3282>:	jmp    0x5555555d0047 <_ZN18CheckBufferOverrun27checkGlobalAndLocalVariableEv+3239>
+   0x5555555d0074 <_ZN18CheckBufferOverrun27checkGlobalAndLocalVariableEv+3284>:	test   %rbp,%rbp
+
+
+threads backtrace:
+
+Thread 1 (Thread 0x7ffff7fc6740 (LWP 66167)):
+#0  0x00005555555d0047 in CheckBufferOverrun::checkGlobalAndLocalVariable() ()
+#1  0x00005555555d021f in CheckBufferOverrun::runSimplifiedChecks(Tokenizer const*, Settings const*, ErrorLogger*) ()
+#2  0x000055555564efd9 in CppCheck::checkSimplifiedTokens(Tokenizer const&) ()
+#3  0x000055555565700a in CppCheck::checkFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+#4  0x0000555555658e5d in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+#5  0x00005555556fa9ec in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+#6  0x00005555556fb25b in CppCheckExecutor::check(int, char const* const*) ()
+#7  0x00005555555b62a4 in main ()
