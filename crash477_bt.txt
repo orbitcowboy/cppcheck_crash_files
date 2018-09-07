@@ -1,0 +1,79 @@
+backtrace:
+#0  0x00005555555bbe07 in isOppositeCond(bool, bool, Token const*, Token const*, Library const&, bool, std::__cxx11::list<std::pair<Token const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<Token const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >*) ()
+No symbol table info available.
+#1  0x00005555555e410d in CheckCondition::checkIncorrectLogicOperator() ()
+No symbol table info available.
+#2  0x00005555555e7bf5 in CheckCondition::runChecks(Tokenizer const*, Settings const*, ErrorLogger*) ()
+No symbol table info available.
+#3  0x000055555564f68b in CppCheck::checkNormalTokens(Tokenizer const&) ()
+No symbol table info available.
+#4  0x00005555556574c8 in CppCheck::checkFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+No symbol table info available.
+#5  0x00005555556593d1 in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+No symbol table info available.
+#6  0x00005555556fb3bc in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+No symbol table info available.
+#7  0x00005555556fbc2b in CppCheckExecutor::check(int, char const* const*) ()
+No symbol table info available.
+#8  0x00005555555b652c in main ()
+No symbol table info available.
+
+
+registers:
+rax            0x0	0
+rbx            0x7fffffffba48	140737488337480
+rcx            0x3d21	15649
+rdx            0x2	2
+rsi            0x5555559b21a0	93824996811168
+rdi            0x0	0
+rbp            0x7fffffffbae0	0x7fffffffbae0
+rsp            0x7fffffffb940	0x7fffffffb940
+r8             0x7fffffffd330	140737488343856
+r9             0x1	1
+r10            0x0	0
+r11            0x5555555bbbe4	93824992656356
+r12            0x7fffffffba68	140737488337512
+r13            0x5555559b19c0	93824996809152
+r14            0x0	0
+r15            0x5555559b1d00	93824996809984
+rip            0x5555555bbe07	0x5555555bbe07 <isOppositeCond(bool, bool, Token const*, Token const*, Library const&, bool, std::__cxx11::list<std::pair<Token const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<Token const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >*)+1593>
+eflags         0x10246	[ PF ZF IF RF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+gs             0x0	0
+
+
+current instructions:
+=> 0x5555555bbe07 <_Z14isOppositeCondbbPK5TokenS1_RK7LibrarybPNSt7__cxx114listISt4pairIS1_NS5_12basic_stringIcSt11char_traitsIcESaIcEEEESaISD_EEE+1593>:	mov    0x98(%r14),%rdi
+   0x5555555bbe0e <_Z14isOppositeCondbbPK5TokenS1_RK7LibrarybPNSt7__cxx114listISt4pairIS1_NS5_12basic_stringIcSt11char_traitsIcESaIcEEEESaISD_EEE+1600>:	callq  0x5555555b7d02 <_ZNK5Token16hasKnownIntValueEv.isra.97>
+   0x5555555bbe13 <_Z14isOppositeCondbbPK5TokenS1_RK7LibrarybPNSt7__cxx114listISt4pairIS1_NS5_12basic_stringIcSt11char_traitsIcESaIcEEEESaISD_EEE+1605>:	test   %al,%al
+   0x5555555bbe15 <_Z14isOppositeCondbbPK5TokenS1_RK7LibrarybPNSt7__cxx114listISt4pairIS1_NS5_12basic_stringIcSt11char_traitsIcESaIcEEEESaISD_EEE+1607>:	je     0x5555555bbe3c <_Z14isOppositeCondbbPK5TokenS1_RK7LibrarybPNSt7__cxx114listISt4pairIS1_NS5_12basic_stringIcSt11char_traitsIcESaIcEEEESaISD_EEE+1646>
+   0x5555555bbe17 <_Z14isOppositeCondbbPK5TokenS1_RK7LibrarybPNSt7__cxx114listISt4pairIS1_NS5_12basic_stringIcSt11char_traitsIcESaIcEEEESaISD_EEE+1609>:	mov    -0x78(%rbp),%rax
+   0x5555555bbe1b <_Z14isOppositeCondbbPK5TokenS1_RK7LibrarybPNSt7__cxx114listISt4pairIS1_NS5_12basic_stringIcSt11char_traitsIcESaIcEEEESaISD_EEE+1613>:	mov    (%rax),%dl
+   0x5555555bbe1d <_Z14isOppositeCondbbPK5TokenS1_RK7LibrarybPNSt7__cxx114listISt4pairIS1_NS5_12basic_stringIcSt11char_traitsIcESaIcEEEESaISD_EEE+1615>:	cmp    $0x3e,%dl
+   0x5555555bbe20 <_Z14isOppositeCondbbPK5TokenS1_RK7LibrarybPNSt7__cxx114listISt4pairIS1_NS5_12basic_stringIcSt11char_traitsIcESaIcEEEESaISD_EEE+1618>:	jne    0x5555555bbe27 <_Z14isOppositeCondbbPK5TokenS1_RK7LibrarybPNSt7__cxx114listISt4pairIS1_NS5_12basic_stringIcSt11char_traitsIcESaIcEEEESaISD_EEE+1625>
+   0x5555555bbe22 <_Z14isOppositeCondbbPK5TokenS1_RK7LibrarybPNSt7__cxx114listISt4pairIS1_NS5_12basic_stringIcSt11char_traitsIcESaIcEEEESaISD_EEE+1620>:	movb   $0x3c,(%rax)
+   0x5555555bbe25 <_Z14isOppositeCondbbPK5TokenS1_RK7LibrarybPNSt7__cxx114listISt4pairIS1_NS5_12basic_stringIcSt11char_traitsIcESaIcEEEESaISD_EEE+1623>:	jmp    0x5555555bbe41 <_Z14isOppositeCondbbPK5TokenS1_RK7LibrarybPNSt7__cxx114listISt4pairIS1_NS5_12basic_stringIcSt11char_traitsIcESaIcEEEESaISD_EEE+1651>
+   0x5555555bbe27 <_Z14isOppositeCondbbPK5TokenS1_RK7LibrarybPNSt7__cxx114listISt4pairIS1_NS5_12basic_stringIcSt11char_traitsIcESaIcEEEESaISD_EEE+1625>:	cmp    $0x3c,%dl
+   0x5555555bbe2a <_Z14isOppositeCondbbPK5TokenS1_RK7LibrarybPNSt7__cxx114listISt4pairIS1_NS5_12basic_stringIcSt11char_traitsIcESaIcEEEESaISD_EEE+1628>:	jne    0x5555555bbe41 <_Z14isOppositeCondbbPK5TokenS1_RK7LibrarybPNSt7__cxx114listISt4pairIS1_NS5_12basic_stringIcSt11char_traitsIcESaIcEEEESaISD_EEE+1651>
+   0x5555555bbe2c <_Z14isOppositeCondbbPK5TokenS1_RK7LibrarybPNSt7__cxx114listISt4pairIS1_NS5_12basic_stringIcSt11char_traitsIcESaIcEEEESaISD_EEE+1630>:	movb   $0x3e,(%rax)
+   0x5555555bbe2f <_Z14isOppositeCondbbPK5TokenS1_RK7LibrarybPNSt7__cxx114listISt4pairIS1_NS5_12basic_stringIcSt11char_traitsIcESaIcEEEESaISD_EEE+1633>:	jmp    0x5555555bbe41 <_Z14isOppositeCondbbPK5TokenS1_RK7LibrarybPNSt7__cxx114listISt4pairIS1_NS5_12basic_stringIcSt11char_traitsIcESaIcEEEESaISD_EEE+1651>
+   0x5555555bbe31 <_Z14isOppositeCondbbPK5TokenS1_RK7LibrarybPNSt7__cxx114listISt4pairIS1_NS5_12basic_stringIcSt11char_traitsIcESaIcEEEESaISD_EEE+1635>:	mov    %rsi,%rax
+   0x5555555bbe34 <_Z14isOppositeCondbbPK5TokenS1_RK7LibrarybPNSt7__cxx114listISt4pairIS1_NS5_12basic_stringIcSt11char_traitsIcESaIcEEEESaISD_EEE+1638>:	mov    %r14,%rsi
+
+
+threads backtrace:
+
+Thread 1 (Thread 0x7ffff7fc6740 (LWP 30922)):
+#0  0x00005555555bbe07 in isOppositeCond(bool, bool, Token const*, Token const*, Library const&, bool, std::__cxx11::list<std::pair<Token const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<Token const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >*) ()
+#1  0x00005555555e410d in CheckCondition::checkIncorrectLogicOperator() ()
+#2  0x00005555555e7bf5 in CheckCondition::runChecks(Tokenizer const*, Settings const*, ErrorLogger*) ()
+#3  0x000055555564f68b in CppCheck::checkNormalTokens(Tokenizer const&) ()
+#4  0x00005555556574c8 in CppCheck::checkFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+#5  0x00005555556593d1 in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+#6  0x00005555556fb3bc in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+#7  0x00005555556fbc2b in CppCheckExecutor::check(int, char const* const*) ()
+#8  0x00005555555b652c in main ()
