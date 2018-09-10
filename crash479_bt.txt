@@ -1,0 +1,85 @@
+backtrace:
+#0  0x00005555555b95b4 in isVariableChanged(Token const*, Token const*, unsigned int, bool, Settings const*, bool) ()
+No symbol table info available.
+#1  0x00005555555b9d52 in followVariableExpression(Token const*, bool, Token const*) ()
+No symbol table info available.
+#2  0x00005555555ba97f in isSameExpression(bool, bool, Token const*, Token const*, Library const&, bool, std::__cxx11::list<std::pair<Token const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<Token const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >*) ()
+No symbol table info available.
+#3  0x0000555555624a7d in CheckOther::checkDuplicateExpression() ()
+No symbol table info available.
+#4  0x0000555555625167 in CheckOther::runChecks(Tokenizer const*, Settings const*, ErrorLogger*) ()
+No symbol table info available.
+#5  0x000055555564e47f in CppCheck::checkNormalTokens(Tokenizer const&) ()
+No symbol table info available.
+#6  0x00005555556562d5 in CppCheck::checkFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+No symbol table info available.
+#7  0x00005555556581cd in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+No symbol table info available.
+#8  0x00005555556fa6c2 in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+No symbol table info available.
+#9  0x00005555556faf31 in CppCheckExecutor::check(int, char const* const*) ()
+No symbol table info available.
+#10 0x00005555555b609c in main ()
+No symbol table info available.
+
+
+registers:
+rax            0x0	0
+rbx            0x0	0
+rcx            0x0	0
+rdx            0x1	1
+rsi            0x5555559b05b0	93824996804016
+rdi            0x5555559aeef0	93824996798192
+rbp            0x5555559b3fb0	0x5555559b3fb0
+rsp            0x7fffffffbb00	0x7fffffffbb00
+r8             0x0	0
+r9             0x1	1
+r10            0x555555973010	93824996552720
+r11            0x0	0
+r12            0x5555559b0500	93824996803840
+r13            0x1	1
+r14            0x7fffffffbbc0	140737488337856
+r15            0x0	0
+rip            0x5555555b95b4	0x5555555b95b4 <isVariableChanged(Token const*, Token const*, unsigned int, bool, Settings const*, bool)+65>
+eflags         0x10287	[ CF PF SF IF RF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+gs             0x0	0
+
+
+current instructions:
+=> 0x5555555b95b4 <_Z17isVariableChangedPK5TokenS1_jbPK8Settingsb+65>:	cmp    0x50(%rbx),%r13d
+   0x5555555b95b8 <_Z17isVariableChangedPK5TokenS1_jbPK8Settingsb+69>:	je     0x5555555b9601 <_Z17isVariableChangedPK5TokenS1_jbPK8Settingsb+142>
+   0x5555555b95ba <_Z17isVariableChangedPK5TokenS1_jbPK8Settingsb+71>:	test   %r12b,%r12b
+   0x5555555b95bd <_Z17isVariableChangedPK5TokenS1_jbPK8Settingsb+74>:	je     0x5555555b9887 <_Z17isVariableChangedPK5TokenS1_jbPK8Settingsb+788>
+   0x5555555b95c3 <_Z17isVariableChangedPK5TokenS1_jbPK8Settingsb+80>:	testb  $0x10,0x6a(%rbx)
+   0x5555555b95c7 <_Z17isVariableChangedPK5TokenS1_jbPK8Settingsb+84>:	je     0x5555555b9887 <_Z17isVariableChangedPK5TokenS1_jbPK8Settingsb+788>
+   0x5555555b95cd <_Z17isVariableChangedPK5TokenS1_jbPK8Settingsb+90>:	mov    0x28(%rbx),%rdi
+   0x5555555b95d1 <_Z17isVariableChangedPK5TokenS1_jbPK8Settingsb+94>:	test   %rdi,%rdi
+   0x5555555b95d4 <_Z17isVariableChangedPK5TokenS1_jbPK8Settingsb+97>:	je     0x5555555b9887 <_Z17isVariableChangedPK5TokenS1_jbPK8Settingsb+788>
+   0x5555555b95da <_Z17isVariableChangedPK5TokenS1_jbPK8Settingsb+103>:	lea    0x16859d(%rip),%rax        # 0x555555721b7e
+   0x5555555b95e1 <_Z17isVariableChangedPK5TokenS1_jbPK8Settingsb+110>:	lea    0x30(%rsp),%rsi
+   0x5555555b95e6 <_Z17isVariableChangedPK5TokenS1_jbPK8Settingsb+115>:	add    $0x8,%rdi
+   0x5555555b95ea <_Z17isVariableChangedPK5TokenS1_jbPK8Settingsb+119>:	mov    %rax,0x30(%rsp)
+   0x5555555b95ef <_Z17isVariableChangedPK5TokenS1_jbPK8Settingsb+124>:	callq  0x5555555b8254 <_ZN13MatchCompilereqILj2EEEbRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS_11ConstStringIXT_EEE>
+   0x5555555b95f4 <_Z17isVariableChangedPK5TokenS1_jbPK8Settingsb+129>:	test   %al,%al
+   0x5555555b95f6 <_Z17isVariableChangedPK5TokenS1_jbPK8Settingsb+131>:	je     0x5555555b9887 <_Z17isVariableChangedPK5TokenS1_jbPK8Settingsb+788>
+
+
+threads backtrace:
+
+Thread 1 (Thread 0x7ffff7fc6740 (LWP 38074)):
+#0  0x00005555555b95b4 in isVariableChanged(Token const*, Token const*, unsigned int, bool, Settings const*, bool) ()
+#1  0x00005555555b9d52 in followVariableExpression(Token const*, bool, Token const*) ()
+#2  0x00005555555ba97f in isSameExpression(bool, bool, Token const*, Token const*, Library const&, bool, std::__cxx11::list<std::pair<Token const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<Token const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >*) ()
+#3  0x0000555555624a7d in CheckOther::checkDuplicateExpression() ()
+#4  0x0000555555625167 in CheckOther::runChecks(Tokenizer const*, Settings const*, ErrorLogger*) ()
+#5  0x000055555564e47f in CppCheck::checkNormalTokens(Tokenizer const&) ()
+#6  0x00005555556562d5 in CppCheck::checkFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+#7  0x00005555556581cd in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+#8  0x00005555556fa6c2 in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+#9  0x00005555556faf31 in CppCheckExecutor::check(int, char const* const*) ()
+#10 0x00005555555b609c in main ()
