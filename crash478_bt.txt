@@ -1,0 +1,79 @@
+backtrace:
+#0  0x00005555555bad12 in isSameExpression(bool, bool, Token const*, Token const*, Library const&, bool, std::__cxx11::list<std::pair<Token const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<Token const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >*) ()
+No symbol table info available.
+#1  0x0000555555624a7d in CheckOther::checkDuplicateExpression() ()
+No symbol table info available.
+#2  0x0000555555625167 in CheckOther::runChecks(Tokenizer const*, Settings const*, ErrorLogger*) ()
+No symbol table info available.
+#3  0x000055555564e47f in CppCheck::checkNormalTokens(Tokenizer const&) ()
+No symbol table info available.
+#4  0x00005555556562d5 in CppCheck::checkFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+No symbol table info available.
+#5  0x00005555556581cd in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+No symbol table info available.
+#6  0x00005555556fa6c2 in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+No symbol table info available.
+#7  0x00005555556faf31 in CppCheckExecutor::check(int, char const* const*) ()
+No symbol table info available.
+#8  0x00005555555b609c in main ()
+No symbol table info available.
+
+
+registers:
+rax            0x1	1
+rbx            0x5555559b1460	93824996807776
+rcx            0x5555559b1878	93824996808824
+rdx            0x555555722a50	93824994126416
+rsi            0x7fffffffbc2e	140737488337966
+rdi            0x5555559b1868	93824996808808
+rbp            0x5555559b06b0	0x5555559b06b0
+rsp            0x7fffffffbc30	0x7fffffffbc30
+r8             0x7fffffffd320	140737488343840
+r9             0x1	1
+r10            0x555555973010	93824996552720
+r11            0x0	0
+r12            0x5555559b1400	93824996807680
+r13            0x5555559b1868	93824996808808
+r14            0x0	0
+r15            0x555555722a50	93824994126416
+rip            0x5555555bad12	0x5555555bad12 <isSameExpression(bool, bool, Token const*, Token const*, Library const&, bool, std::__cxx11::list<std::pair<Token const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<Token const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >*)+1503>
+eflags         0x10246	[ PF ZF IF RF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+gs             0x0	0
+
+
+current instructions:
+=> 0x5555555bad12 <_Z16isSameExpressionbbPK5TokenS1_RK7LibrarybPNSt7__cxx114listISt4pairIS1_NS5_12basic_stringIcSt11char_traitsIcESaIcEEEESaISD_EEE+1503>:	mov    0x64,%eax
+   0x5555555bad19 <_Z16isSameExpressionbbPK5TokenS1_RK7LibrarybPNSt7__cxx114listISt4pairIS1_NS5_12basic_stringIcSt11char_traitsIcESaIcEEEESaISD_EEE+1510>:	ud2    
+   0x5555555bad1b <_Z16isSameExpressionbbPK5TokenS1_RK7LibrarybPNSt7__cxx114listISt4pairIS1_NS5_12basic_stringIcSt11char_traitsIcESaIcEEEESaISD_EEE+1512>:	mov    0x48(%r14),%rax
+   0x5555555bad1f <_Z16isSameExpressionbbPK5TokenS1_RK7LibrarybPNSt7__cxx114listISt4pairIS1_NS5_12basic_stringIcSt11char_traitsIcESaIcEEEESaISD_EEE+1516>:	test   %rax,%rax
+   0x5555555bad22 <_Z16isSameExpressionbbPK5TokenS1_RK7LibrarybPNSt7__cxx114listISt4pairIS1_NS5_12basic_stringIcSt11char_traitsIcESaIcEEEESaISD_EEE+1519>:	je     0x5555555bad2e <_Z16isSameExpressionbbPK5TokenS1_RK7LibrarybPNSt7__cxx114listISt4pairIS1_NS5_12basic_stringIcSt11char_traitsIcESaIcEEEESaISD_EEE+1531>
+   0x5555555bad24 <_Z16isSameExpressionbbPK5TokenS1_RK7LibrarybPNSt7__cxx114listISt4pairIS1_NS5_12basic_stringIcSt11char_traitsIcESaIcEEEESaISD_EEE+1521>:	testb  $0x4,0x24(%rax)
+   0x5555555bad28 <_Z16isSameExpressionbbPK5TokenS1_RK7LibrarybPNSt7__cxx114listISt4pairIS1_NS5_12basic_stringIcSt11char_traitsIcESaIcEEEESaISD_EEE+1525>:	jne    0x5555555badf7 <_Z16isSameExpressionbbPK5TokenS1_RK7LibrarybPNSt7__cxx114listISt4pairIS1_NS5_12basic_stringIcSt11char_traitsIcESaIcEEEESaISD_EEE+1732>
+   0x5555555bad2e <_Z16isSameExpressionbbPK5TokenS1_RK7LibrarybPNSt7__cxx114listISt4pairIS1_NS5_12basic_stringIcSt11char_traitsIcESaIcEEEESaISD_EEE+1531>:	mov    0x90(%r14),%rax
+   0x5555555bad35 <_Z16isSameExpressionbbPK5TokenS1_RK7LibrarybPNSt7__cxx114listISt4pairIS1_NS5_12basic_stringIcSt11char_traitsIcESaIcEEEESaISD_EEE+1538>:	test   %rax,%rax
+   0x5555555bad38 <_Z16isSameExpressionbbPK5TokenS1_RK7LibrarybPNSt7__cxx114listISt4pairIS1_NS5_12basic_stringIcSt11char_traitsIcESaIcEEEESaISD_EEE+1541>:	je     0x5555555bad44 <_Z16isSameExpressionbbPK5TokenS1_RK7LibrarybPNSt7__cxx114listISt4pairIS1_NS5_12basic_stringIcSt11char_traitsIcESaIcEEEESaISD_EEE+1553>
+   0x5555555bad3a <_Z16isSameExpressionbbPK5TokenS1_RK7LibrarybPNSt7__cxx114listISt4pairIS1_NS5_12basic_stringIcSt11char_traitsIcESaIcEEEESaISD_EEE+1543>:	cmpl   $0x0,0x10(%rax)
+   0x5555555bad3e <_Z16isSameExpressionbbPK5TokenS1_RK7LibrarybPNSt7__cxx114listISt4pairIS1_NS5_12basic_stringIcSt11char_traitsIcESaIcEEEESaISD_EEE+1547>:	jne    0x5555555badf7 <_Z16isSameExpressionbbPK5TokenS1_RK7LibrarybPNSt7__cxx114listISt4pairIS1_NS5_12basic_stringIcSt11char_traitsIcESaIcEEEESaISD_EEE+1732>
+   0x5555555bad44 <_Z16isSameExpressionbbPK5TokenS1_RK7LibrarybPNSt7__cxx114listISt4pairIS1_NS5_12basic_stringIcSt11char_traitsIcESaIcEEEESaISD_EEE+1553>:	cmpl   $0x0,0x50(%r14)
+   0x5555555bad49 <_Z16isSameExpressionbbPK5TokenS1_RK7LibrarybPNSt7__cxx114listISt4pairIS1_NS5_12basic_stringIcSt11char_traitsIcESaIcEEEESaISD_EEE+1558>:	je     0x5555555bb335 <_Z16isSameExpressionbbPK5TokenS1_RK7LibrarybPNSt7__cxx114listISt4pairIS1_NS5_12basic_stringIcSt11char_traitsIcESaIcEEEESaISD_EEE+3074>
+   0x5555555bad4f <_Z16isSameExpressionbbPK5TokenS1_RK7LibrarybPNSt7__cxx114listISt4pairIS1_NS5_12basic_stringIcSt11char_traitsIcESaIcEEEESaISD_EEE+1564>:	mov    0x28(%r14),%r13
+   0x5555555bad53 <_Z16isSameExpressionbbPK5TokenS1_RK7LibrarybPNSt7__cxx114listISt4pairIS1_NS5_12basic_stringIcSt11char_traitsIcESaIcEEEESaISD_EEE+1568>:	test   %r13,%r13
+
+
+threads backtrace:
+
+Thread 1 (Thread 0x7ffff7fc6740 (LWP 75900)):
+#0  0x00005555555bad12 in isSameExpression(bool, bool, Token const*, Token const*, Library const&, bool, std::__cxx11::list<std::pair<Token const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<Token const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >*) ()
+#1  0x0000555555624a7d in CheckOther::checkDuplicateExpression() ()
+#2  0x0000555555625167 in CheckOther::runChecks(Tokenizer const*, Settings const*, ErrorLogger*) ()
+#3  0x000055555564e47f in CppCheck::checkNormalTokens(Tokenizer const&) ()
+#4  0x00005555556562d5 in CppCheck::checkFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+#5  0x00005555556581cd in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+#6  0x00005555556fa6c2 in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+#7  0x00005555556faf31 in CppCheckExecutor::check(int, char const* const*) ()
+#8  0x00005555555b609c in main ()
