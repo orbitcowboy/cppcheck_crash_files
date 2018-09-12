@@ -1,0 +1,82 @@
+backtrace:
+#0  0x000055555563e564 in CheckUninitVar::checkLoopBody(Token const*, Variable const&, CheckUninitVar::Alloc, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) ()
+No symbol table info available.
+#1  0x00005555556421b8 in CheckUninitVar::checkScope(Scope const*, std::set<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&) ()
+No symbol table info available.
+#2  0x0000555555642755 in CheckUninitVar::check() ()
+No symbol table info available.
+#3  0x00005555556427cb in CheckUninitVar::runSimplifiedChecks(Tokenizer const*, Settings const*, ErrorLogger*) ()
+No symbol table info available.
+#4  0x000055555564e341 in CppCheck::checkSimplifiedTokens(Tokenizer const&) ()
+No symbol table info available.
+#5  0x000055555565638b in CppCheck::checkFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+No symbol table info available.
+#6  0x00005555556581cd in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+No symbol table info available.
+#7  0x00005555556fa6e4 in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+No symbol table info available.
+#8  0x00005555556faf53 in CppCheckExecutor::check(int, char const* const*) ()
+No symbol table info available.
+#9  0x00005555555b609c in main ()
+No symbol table info available.
+
+
+registers:
+rax            0x0	0
+rbx            0x0	0
+rcx            0x0	0
+rdx            0x5555559b1610	93824996808208
+rsi            0x555555722289	93824994124425
+rdi            0x5555559b5758	93824996824920
+rbp            0x7fffffffbc38	0x7fffffffbc38
+rsp            0x7fffffffbbf0	0x7fffffffbbf0
+r8             0x55555596b540	93824996521280
+r9             0x1	1
+r10            0x0	0
+r11            0x5555559acfc0	93824996790208
+r12            0x5555559b04b0	93824996803760
+r13            0x7fffffffbd78	140737488338296
+r14            0x5555559b5748	93824996824904
+r15            0x559afb00	1436220160
+rip            0x55555563e564	0x55555563e564 <CheckUninitVar::checkLoopBody(Token const*, Variable const&, CheckUninitVar::Alloc, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool)+384>
+eflags         0x10246	[ PF ZF IF RF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+gs             0x0	0
+
+
+current instructions:
+=> 0x55555563e564 <_ZN14CheckUninitVar13checkLoopBodyEPK5TokenRK8VariableNS_5AllocERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEb+384>:	mov    0x50(%rbx),%ecx
+   0x55555563e567 <_ZN14CheckUninitVar13checkLoopBodyEPK5TokenRK8VariableNS_5AllocERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEb+387>:	test   %rdx,%rdx
+   0x55555563e56a <_ZN14CheckUninitVar13checkLoopBodyEPK5TokenRK8VariableNS_5AllocERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEb+390>:	je     0x55555563e56f <_ZN14CheckUninitVar13checkLoopBodyEPK5TokenRK8VariableNS_5AllocERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEb+395>
+   0x55555563e56c <_ZN14CheckUninitVar13checkLoopBodyEPK5TokenRK8VariableNS_5AllocERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEb+392>:	mov    0x50(%rdx),%eax
+   0x55555563e56f <_ZN14CheckUninitVar13checkLoopBodyEPK5TokenRK8VariableNS_5AllocERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEb+395>:	cmp    %ecx,%eax
+   0x55555563e571 <_ZN14CheckUninitVar13checkLoopBodyEPK5TokenRK8VariableNS_5AllocERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEb+397>:	jne    0x55555563e987 <_ZN14CheckUninitVar13checkLoopBodyEPK5TokenRK8VariableNS_5AllocERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEb+1443>
+   0x55555563e577 <_ZN14CheckUninitVar13checkLoopBodyEPK5TokenRK8VariableNS_5AllocERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEb+403>:	mov    0x18(%rsp),%rax
+   0x55555563e57c <_ZN14CheckUninitVar13checkLoopBodyEPK5TokenRK8VariableNS_5AllocERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEb+408>:	cmpq   $0x0,0x8(%rax)
+   0x55555563e581 <_ZN14CheckUninitVar13checkLoopBodyEPK5TokenRK8VariableNS_5AllocERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEb+413>:	je     0x55555563e71c <_ZN14CheckUninitVar13checkLoopBodyEPK5TokenRK8VariableNS_5AllocERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEb+824>
+   0x55555563e587 <_ZN14CheckUninitVar13checkLoopBodyEPK5TokenRK8VariableNS_5AllocERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEb+419>:	mov    0x10(%rsp),%rdi
+   0x55555563e58c <_ZN14CheckUninitVar13checkLoopBodyEPK5TokenRK8VariableNS_5AllocERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEb+424>:	mov    %rax,%rdx
+   0x55555563e58f <_ZN14CheckUninitVar13checkLoopBodyEPK5TokenRK8VariableNS_5AllocERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEb+427>:	mov    %rbx,%rsi
+   0x55555563e592 <_ZN14CheckUninitVar13checkLoopBodyEPK5TokenRK8VariableNS_5AllocERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEb+430>:	callq  0x55555563bd4e <_ZNK14CheckUninitVar26isMemberVariableAssignmentEPK5TokenRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE>
+   0x55555563e597 <_ZN14CheckUninitVar13checkLoopBodyEPK5TokenRK8VariableNS_5AllocERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEb+435>:	test   %al,%al
+   0x55555563e599 <_ZN14CheckUninitVar13checkLoopBodyEPK5TokenRK8VariableNS_5AllocERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEb+437>:	mov    %al,%r13b
+   0x55555563e59c <_ZN14CheckUninitVar13checkLoopBodyEPK5TokenRK8VariableNS_5AllocERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEb+440>:	je     0x55555563e6dd <_ZN14CheckUninitVar13checkLoopBodyEPK5TokenRK8VariableNS_5AllocERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEb+761>
+
+
+threads backtrace:
+
+Thread 1 (Thread 0x7ffff7fc6740 (LWP 20342)):
+#0  0x000055555563e564 in CheckUninitVar::checkLoopBody(Token const*, Variable const&, CheckUninitVar::Alloc, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) ()
+#1  0x00005555556421b8 in CheckUninitVar::checkScope(Scope const*, std::set<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&) ()
+#2  0x0000555555642755 in CheckUninitVar::check() ()
+#3  0x00005555556427cb in CheckUninitVar::runSimplifiedChecks(Tokenizer const*, Settings const*, ErrorLogger*) ()
+#4  0x000055555564e341 in CppCheck::checkSimplifiedTokens(Tokenizer const&) ()
+#5  0x000055555565638b in CppCheck::checkFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+#6  0x00005555556581cd in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+#7  0x00005555556fa6e4 in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+#8  0x00005555556faf53 in CppCheckExecutor::check(int, char const* const*) ()
+#9  0x00005555555b609c in main ()
