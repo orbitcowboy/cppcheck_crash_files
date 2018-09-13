@@ -1,0 +1,73 @@
+backtrace:
+#0  0x00005555556b7958 in Tokenizer::simplifyRealloc() ()
+No symbol table info available.
+#1  0x00005555556d7ad3 in Tokenizer::simplifyTokenList2() ()
+No symbol table info available.
+#2  0x0000555555656372 in CppCheck::checkFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+No symbol table info available.
+#3  0x00005555556581d9 in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+No symbol table info available.
+#4  0x00005555556fa6f0 in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+No symbol table info available.
+#5  0x00005555556faf5f in CppCheckExecutor::check(int, char const* const*) ()
+No symbol table info available.
+#6  0x00005555555b609c in main ()
+No symbol table info available.
+
+
+registers:
+rax            0x1	1
+rbx            0x0	0
+rcx            0x5555559b1758	93824996808536
+rdx            0x0	0
+rsi            0x7fffffffbe5b	140737488338523
+rdi            0x5555559b1748	93824996808520
+rbp            0x0	0x0
+rsp            0x7fffffffbec0	0x7fffffffbec0
+r8             0x7ffff7b61040	140737349292096
+r9             0x7ffff7b55660	140737349244512
+r10            0x555555973010	93824996552720
+r11            0x0	0
+r12            0x7fffffffbf58	140737488338776
+r13            0x0	0
+r14            0x55555571e5f7	93824994108919
+r15            0x5555559ad148	93824996790600
+rip            0x5555556b7958	0x5555556b7958 <Tokenizer::simplifyRealloc()+924>
+eflags         0x10202	[ IF RF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+gs             0x0	0
+
+
+current instructions:
+=> 0x5555556b7958 <_ZN9Tokenizer15simplifyReallocEv+924>:	mov    0x28(%rbx),%rbx
+   0x5555556b795c <_ZN9Tokenizer15simplifyReallocEv+928>:	jmpq   0x5555556b75e4 <_ZN9Tokenizer15simplifyReallocEv+40>
+   0x5555556b7961 <_ZN9Tokenizer15simplifyReallocEv+933>:	jmp    0x5555556b7963 <_ZN9Tokenizer15simplifyReallocEv+935>
+   0x5555556b7963 <_ZN9Tokenizer15simplifyReallocEv+935>:	mov    %rax,%rbp
+   0x5555556b7966 <_ZN9Tokenizer15simplifyReallocEv+938>:	mov    %rbx,%rdi
+   0x5555556b7969 <_ZN9Tokenizer15simplifyReallocEv+941>:	callq  0x5555555ad440 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+   0x5555556b796e <_ZN9Tokenizer15simplifyReallocEv+946>:	mov    %rbp,%rdi
+   0x5555556b7971 <_ZN9Tokenizer15simplifyReallocEv+949>:	callq  0x5555555ad850 <_Unwind_Resume@plt>
+   0x5555556b7976 <_ZN9Tokenizer15simplifyReallocEv+954>:	mov    0x38(%rsp),%rax
+   0x5555556b797b <_ZN9Tokenizer15simplifyReallocEv+959>:	xor    %fs:0x28,%rax
+   0x5555556b7984 <_ZN9Tokenizer15simplifyReallocEv+968>:	je     0x5555556b798b <_ZN9Tokenizer15simplifyReallocEv+975>
+   0x5555556b7986 <_ZN9Tokenizer15simplifyReallocEv+970>:	callq  0x5555555ad2f0 <__stack_chk_fail@plt>
+   0x5555556b798b <_ZN9Tokenizer15simplifyReallocEv+975>:	add    $0x48,%rsp
+   0x5555556b798f <_ZN9Tokenizer15simplifyReallocEv+979>:	pop    %rbx
+   0x5555556b7990 <_ZN9Tokenizer15simplifyReallocEv+980>:	pop    %rbp
+   0x5555556b7991 <_ZN9Tokenizer15simplifyReallocEv+981>:	pop    %r12
+
+
+threads backtrace:
+
+Thread 1 (Thread 0x7ffff7fc6740 (LWP 95122)):
+#0  0x00005555556b7958 in Tokenizer::simplifyRealloc() ()
+#1  0x00005555556d7ad3 in Tokenizer::simplifyTokenList2() ()
+#2  0x0000555555656372 in CppCheck::checkFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+#3  0x00005555556581d9 in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+#4  0x00005555556fa6f0 in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+#5  0x00005555556faf5f in CppCheckExecutor::check(int, char const* const*) ()
+#6  0x00005555555b609c in main ()
