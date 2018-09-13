@@ -1,0 +1,76 @@
+backtrace:
+#0  0x00005555556be443 in Tokenizer::eraseDeadCode(Token*, Token const*) ()
+No symbol table info available.
+#1  0x00005555556c40ea in Tokenizer::simplifyFlowControl() ()
+No symbol table info available.
+#2  0x00005555556d7c8e in Tokenizer::simplifyTokenList2() ()
+No symbol table info available.
+#3  0x0000555555656372 in CppCheck::checkFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+No symbol table info available.
+#4  0x00005555556581d9 in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+No symbol table info available.
+#5  0x00005555556fa6f0 in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+No symbol table info available.
+#6  0x00005555556faf5f in CppCheckExecutor::check(int, char const* const*) ()
+No symbol table info available.
+#7  0x00005555555b609c in main ()
+No symbol table info available.
+
+
+registers:
+rax            0x0	0
+rbx            0x5555559b13a0	93824996807584
+rcx            0x5555559b07f8	93824996804600
+rdx            0x5555557177d4	93824994080724
+rsi            0x7fffffffbe7d	140737488338557
+rdi            0x5555559b07e8	93824996804584
+rbp            0x2	0x2
+rsp            0x7fffffffbdc0	0x7fffffffbdc0
+r8             0x2	2
+r9             0x7ffff7b55660	140737349244512
+r10            0x555555973010	93824996552720
+r11            0x0	0
+r12            0x1	1
+r13            0x5555559b07e0	93824996804576
+r14            0x1	1
+r15            0x5555559b07e8	93824996804584
+rip            0x5555556be443	0x5555556be443 <Tokenizer::eraseDeadCode(Token*, Token const*)+1913>
+eflags         0x10202	[ IF RF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+gs             0x0	0
+
+
+current instructions:
+=> 0x5555556be443 <_ZN9Tokenizer13eraseDeadCodeEP5TokenPKS0_+1913>:	mov    0x30(%rax),%rbx
+   0x5555556be447 <_ZN9Tokenizer13eraseDeadCodeEP5TokenPKS0_+1917>:	jmpq   0x5555556bdff9 <_ZN9Tokenizer13eraseDeadCodeEP5TokenPKS0_+815>
+   0x5555556be44c <_ZN9Tokenizer13eraseDeadCodeEP5TokenPKS0_+1922>:	mov    %r13,%rbx
+   0x5555556be44f <_ZN9Tokenizer13eraseDeadCodeEP5TokenPKS0_+1925>:	movl   $0x0,0x10(%rsp)
+   0x5555556be457 <_ZN9Tokenizer13eraseDeadCodeEP5TokenPKS0_+1933>:	mov    %r14d,%ebp
+   0x5555556be45a <_ZN9Tokenizer13eraseDeadCodeEP5TokenPKS0_+1936>:	jmpq   0x5555556bddd2 <_ZN9Tokenizer13eraseDeadCodeEP5TokenPKS0_+264>
+   0x5555556be45f <_ZN9Tokenizer13eraseDeadCodeEP5TokenPKS0_+1941>:	mov    %r13,%rbx
+   0x5555556be462 <_ZN9Tokenizer13eraseDeadCodeEP5TokenPKS0_+1944>:	jmpq   0x5555556be024 <_ZN9Tokenizer13eraseDeadCodeEP5TokenPKS0_+858>
+   0x5555556be467 <_ZN9Tokenizer13eraseDeadCodeEP5TokenPKS0_+1949>:	mov    $0x2,%esi
+   0x5555556be46c <_ZN9Tokenizer13eraseDeadCodeEP5TokenPKS0_+1954>:	mov    %rbx,%rdi
+   0x5555556be46f <_ZN9Tokenizer13eraseDeadCodeEP5TokenPKS0_+1957>:	callq  0x55555569e3da <_ZNK5Token5tokAtEi>
+   0x5555556be474 <_ZN9Tokenizer13eraseDeadCodeEP5TokenPKS0_+1962>:	test   %rax,%rax
+   0x5555556be477 <_ZN9Tokenizer13eraseDeadCodeEP5TokenPKS0_+1965>:	mov    %rax,%r13
+   0x5555556be47a <_ZN9Tokenizer13eraseDeadCodeEP5TokenPKS0_+1968>:	je     0x5555556be3e5 <_ZN9Tokenizer13eraseDeadCodeEP5TokenPKS0_+1819>
+   0x5555556be480 <_ZN9Tokenizer13eraseDeadCodeEP5TokenPKS0_+1974>:	lea    0x63717(%rip),%rax        # 0x555555721b9e
+   0x5555556be487 <_ZN9Tokenizer13eraseDeadCodeEP5TokenPKS0_+1981>:	lea    0x8(%r13),%rdi
+
+
+threads backtrace:
+
+Thread 1 (Thread 0x7ffff7fc6740 (LWP 70798)):
+#0  0x00005555556be443 in Tokenizer::eraseDeadCode(Token*, Token const*) ()
+#1  0x00005555556c40ea in Tokenizer::simplifyFlowControl() ()
+#2  0x00005555556d7c8e in Tokenizer::simplifyTokenList2() ()
+#3  0x0000555555656372 in CppCheck::checkFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+#4  0x00005555556581d9 in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+#5  0x00005555556fa6f0 in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+#6  0x00005555556faf5f in CppCheckExecutor::check(int, char const* const*) ()
+#7  0x00005555555b609c in main ()
