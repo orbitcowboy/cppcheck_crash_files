@@ -1,0 +1,82 @@
+backtrace:
+#0  0x00005555556e5d9d in setTokenValue(Token*, ValueFlow::Value const&, Settings const*) ()
+No symbol table info available.
+#1  0x00005555556e7e27 in valueFlowSetConstantValue(Token const*, Settings const*, bool) ()
+No symbol table info available.
+#2  0x00005555556e8a4e in valueFlowNumber(TokenList*) ()
+No symbol table info available.
+#3  0x00005555556f30f5 in ValueFlow::setValues(TokenList*, SymbolDatabase*, ErrorLogger*, Settings const*) ()
+No symbol table info available.
+#4  0x00005555556dae9e in Tokenizer::simplifyTokens1(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+No symbol table info available.
+#5  0x000055555565618f in CppCheck::checkFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+No symbol table info available.
+#6  0x00005555556581d9 in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+No symbol table info available.
+#7  0x00005555556fa6f0 in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+No symbol table info available.
+#8  0x00005555556faf5f in CppCheckExecutor::check(int, char const* const*) ()
+No symbol table info available.
+#9  0x00005555555b609c in main ()
+No symbol table info available.
+
+
+registers:
+rax            0x8000000000000000	-9223372036854775808
+rbx            0x5555559ad4d0	93824996791504
+rcx            0xffffffffffffffff	-1
+rdx            0xffffffffffffffff	-1
+rsi            0x5555559ad448	93824996791368
+rdi            0x7fffffffb9d0	140737488337360
+rbp            0x7fffffffba30	0x7fffffffba30
+rsp            0x7fffffffb840	0x7fffffffb840
+r8             0xffffffff	4294967295
+r9             0x7fffffffb910	140737488337168
+r10            0x555555973010	93824996552720
+r11            0x0	0
+r12            0x7fffffffb998	140737488337304
+r13            0x0	0
+r14            0x5555559b15a0	93824996808096
+r15            0x7fffffffd108	140737488343304
+rip            0x5555556e5d9d	0x5555556e5d9d <setTokenValue(Token*, ValueFlow::Value const&, Settings const*)+2796>
+eflags         0x10293	[ CF AF SF IF RF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+gs             0x0	0
+
+
+current instructions:
+=> 0x5555556e5d9d <_ZL13setTokenValueP5TokenRKN9ValueFlow5ValueEPK8Settings+2796>:	idiv   %rcx
+   0x5555556e5da0 <_ZL13setTokenValueP5TokenRKN9ValueFlow5ValueEPK8Settings+2799>:	jmpq   0x5555556e628a <_ZL13setTokenValueP5TokenRKN9ValueFlow5ValueEPK8Settings+4057>
+   0x5555556e5da5 <_ZL13setTokenValueP5TokenRKN9ValueFlow5ValueEPK8Settings+2804>:	movl   $0x2,-0x98(%rbp)
+   0x5555556e5daf <_ZL13setTokenValueP5TokenRKN9ValueFlow5ValueEPK8Settings+2814>:	divss  %xmm1,%xmm0
+   0x5555556e5db3 <_ZL13setTokenValueP5TokenRKN9ValueFlow5ValueEPK8Settings+2818>:	jmpq   0x5555556e5d14 <_ZL13setTokenValueP5TokenRKN9ValueFlow5ValueEPK8Settings+2659>
+   0x5555556e5db8 <_ZL13setTokenValueP5TokenRKN9ValueFlow5ValueEPK8Settings+2823>:	or     %r13d,%edx
+   0x5555556e5dbb <_ZL13setTokenValueP5TokenRKN9ValueFlow5ValueEPK8Settings+2826>:	jne    0x5555556e629f <_ZL13setTokenValueP5TokenRKN9ValueFlow5ValueEPK8Settings+4078>
+   0x5555556e5dc1 <_ZL13setTokenValueP5TokenRKN9ValueFlow5ValueEPK8Settings+2832>:	mov    -0x1a8(%rbp),%rax
+   0x5555556e5dc8 <_ZL13setTokenValueP5TokenRKN9ValueFlow5ValueEPK8Settings+2839>:	mov    0x18(%rax),%rcx
+   0x5555556e5dcc <_ZL13setTokenValueP5TokenRKN9ValueFlow5ValueEPK8Settings+2843>:	test   %rcx,%rcx
+   0x5555556e5dcf <_ZL13setTokenValueP5TokenRKN9ValueFlow5ValueEPK8Settings+2846>:	je     0x5555556e629f <_ZL13setTokenValueP5TokenRKN9ValueFlow5ValueEPK8Settings+4078>
+   0x5555556e5dd5 <_ZL13setTokenValueP5TokenRKN9ValueFlow5ValueEPK8Settings+2852>:	mov    0x18(%rbx),%rax
+   0x5555556e5dd9 <_ZL13setTokenValueP5TokenRKN9ValueFlow5ValueEPK8Settings+2856>:	cqto   
+   0x5555556e5ddb <_ZL13setTokenValueP5TokenRKN9ValueFlow5ValueEPK8Settings+2858>:	idiv   %rcx
+   0x5555556e5dde <_ZL13setTokenValueP5TokenRKN9ValueFlow5ValueEPK8Settings+2861>:	jmpq   0x5555556e624d <_ZL13setTokenValueP5TokenRKN9ValueFlow5ValueEPK8Settings+3996>
+   0x5555556e5de3 <_ZL13setTokenValueP5TokenRKN9ValueFlow5ValueEPK8Settings+2866>:	mov    -0x1b0(%rbp),%rdi
+
+
+threads backtrace:
+
+Thread 1 (Thread 0x7ffff7fc6740 (LWP 34370)):
+#0  0x00005555556e5d9d in setTokenValue(Token*, ValueFlow::Value const&, Settings const*) ()
+#1  0x00005555556e7e27 in valueFlowSetConstantValue(Token const*, Settings const*, bool) ()
+#2  0x00005555556e8a4e in valueFlowNumber(TokenList*) ()
+#3  0x00005555556f30f5 in ValueFlow::setValues(TokenList*, SymbolDatabase*, ErrorLogger*, Settings const*) ()
+#4  0x00005555556dae9e in Tokenizer::simplifyTokens1(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+#5  0x000055555565618f in CppCheck::checkFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+#6  0x00005555556581d9 in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+#7  0x00005555556fa6f0 in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+#8  0x00005555556faf5f in CppCheckExecutor::check(int, char const* const*) ()
+#9  0x00005555555b609c in main ()
