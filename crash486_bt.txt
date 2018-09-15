@@ -1,0 +1,82 @@
+backtrace:
+#0  0x00005555555ba5fc in followVariableExpression(Token const*, bool, Token const*) ()
+No symbol table info available.
+#1  0x00005555555baae5 in isSameExpression(bool, bool, Token const*, Token const*, Library const&, bool, std::__cxx11::list<std::pair<Token const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<Token const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >*) ()
+No symbol table info available.
+#2  0x0000555555624b8f in CheckOther::checkDuplicateExpression() ()
+No symbol table info available.
+#3  0x0000555555625279 in CheckOther::runChecks(Tokenizer const*, Settings const*, ErrorLogger*) ()
+No symbol table info available.
+#4  0x000055555564e5db in CppCheck::checkNormalTokens(Tokenizer const&) ()
+No symbol table info available.
+#5  0x0000555555656431 in CppCheck::checkFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+No symbol table info available.
+#6  0x0000555555658329 in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+No symbol table info available.
+#7  0x00005555556fa8d6 in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+No symbol table info available.
+#8  0x00005555556fb145 in CppCheckExecutor::check(int, char const* const*) ()
+No symbol table info available.
+#9  0x00005555555b61ec in main ()
+No symbol table info available.
+
+
+registers:
+rax            0x0	0
+rbx            0x0	0
+rcx            0x5555559aead8	93824996797144
+rdx            0x5555557109b6	93824994052534
+rsi            0x7fffffffbb3b	140737488337723
+rdi            0x5555559aeac8	93824996797128
+rbp            0x5555559b0a60	0x5555559b0a60
+rsp            0x7fffffffbb70	0x7fffffffbb70
+r8             0x5555559b0a78	93824996805240
+r9             0x1	1
+r10            0x555555973010	93824996552720
+r11            0x0	0
+r12            0x5555559b0a60	93824996805216
+r13            0x5555559ae330	93824996795184
+r14            0x12	18
+r15            0x55555571e700	93824994109184
+rip            0x5555555ba5fc	0x5555555ba5fc <followVariableExpression(Token const*, bool, Token const*)+942>
+eflags         0x10246	[ PF ZF IF RF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+gs             0x0	0
+
+
+current instructions:
+=> 0x5555555ba5fc <_ZL24followVariableExpressionPK5TokenbS1_+942>:	cmpq   $0x0,0x80(%rbx)
+   0x5555555ba604 <_ZL24followVariableExpressionPK5TokenbS1_+950>:	jne    0x5555555ba62c <_ZL24followVariableExpressionPK5TokenbS1_+990>
+   0x5555555ba606 <_ZL24followVariableExpressionPK5TokenbS1_+952>:	jmp    0x5555555ba65f <_ZL24followVariableExpressionPK5TokenbS1_+1041>
+   0x5555555ba608 <_ZL24followVariableExpressionPK5TokenbS1_+954>:	mov    0x8(%rsp),%rsi
+   0x5555555ba60d <_ZL24followVariableExpressionPK5TokenbS1_+959>:	lea    0x1563a2(%rip),%rax        # 0x5555557109b6
+   0x5555555ba614 <_ZL24followVariableExpressionPK5TokenbS1_+966>:	lea    0x8(%rbx),%rdi
+   0x5555555ba618 <_ZL24followVariableExpressionPK5TokenbS1_+970>:	mov    %rax,0x50(%rsp)
+   0x5555555ba61d <_ZL24followVariableExpressionPK5TokenbS1_+975>:	callq  0x5555555b83a4 <_ZN13MatchCompilereqILj2EEEbRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS_11ConstStringIXT_EEE>
+   0x5555555ba622 <_ZL24followVariableExpressionPK5TokenbS1_+980>:	test   %al,%al
+   0x5555555ba624 <_ZL24followVariableExpressionPK5TokenbS1_+982>:	jne    0x5555555ba818 <_ZL24followVariableExpressionPK5TokenbS1_+1482>
+   0x5555555ba62a <_ZL24followVariableExpressionPK5TokenbS1_+988>:	jmp    0x5555555ba5fc <_ZL24followVariableExpressionPK5TokenbS1_+942>
+   0x5555555ba62c <_ZL24followVariableExpressionPK5TokenbS1_+990>:	lea    0x58(%rsp),%r14
+   0x5555555ba631 <_ZL24followVariableExpressionPK5TokenbS1_+995>:	lea    0x16616e(%rip),%rsi        # 0x5555557207a6
+   0x5555555ba638 <_ZL24followVariableExpressionPK5TokenbS1_+1002>:	mov    %r14,%rdi
+   0x5555555ba63b <_ZL24followVariableExpressionPK5TokenbS1_+1005>:	callq  0x5555555b7a8e <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC2EPKcRKS3_.isra.118>
+   0x5555555ba640 <_ZL24followVariableExpressionPK5TokenbS1_+1010>:	mov    %r14,%rsi
+
+
+threads backtrace:
+
+Thread 1 (Thread 0x7ffff7fc6740 (LWP 3116)):
+#0  0x00005555555ba5fc in followVariableExpression(Token const*, bool, Token const*) ()
+#1  0x00005555555baae5 in isSameExpression(bool, bool, Token const*, Token const*, Library const&, bool, std::__cxx11::list<std::pair<Token const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<Token const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >*) ()
+#2  0x0000555555624b8f in CheckOther::checkDuplicateExpression() ()
+#3  0x0000555555625279 in CheckOther::runChecks(Tokenizer const*, Settings const*, ErrorLogger*) ()
+#4  0x000055555564e5db in CppCheck::checkNormalTokens(Tokenizer const&) ()
+#5  0x0000555555656431 in CppCheck::checkFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+#6  0x0000555555658329 in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+#7  0x00005555556fa8d6 in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+#8  0x00005555556fb145 in CppCheckExecutor::check(int, char const* const*) ()
+#9  0x00005555555b61ec in main ()
