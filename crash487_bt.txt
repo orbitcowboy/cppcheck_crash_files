@@ -1,0 +1,82 @@
+backtrace:
+#0  0x00005555555b83a7 in bool MatchCompiler::operator==<2u>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, MatchCompiler::ConstString<2u> const&) ()
+No symbol table info available.
+#1  0x00005555555b8d8c in bool MatchCompiler::operator!=<2u>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, MatchCompiler::ConstString<2u> const&) ()
+No symbol table info available.
+#2  0x00005555556c9295 in Tokenizer::simplifyTypedef() ()
+No symbol table info available.
+#3  0x00005555556dab73 in Tokenizer::simplifyTokenList1(char const*) ()
+No symbol table info available.
+#4  0x00005555556dafb8 in Tokenizer::simplifyTokens1(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+No symbol table info available.
+#5  0x00005555556562df in CppCheck::checkFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+No symbol table info available.
+#6  0x0000555555658329 in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+No symbol table info available.
+#7  0x00005555556fa8d6 in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+No symbol table info available.
+#8  0x00005555556fb145 in CppCheckExecutor::check(int, char const* const*) ()
+No symbol table info available.
+#9  0x00005555555b61ec in main ()
+No symbol table info available.
+
+
+registers:
+rax            0x5555557179d4	93824994081236
+rbx            0x0	0
+rcx            0x0	0
+rdx            0x5555557179d4	93824994081236
+rsi            0x7fffffffbd50	140737488338256
+rdi            0x8	8
+rbp            0x5555559b4f18	0x5555559b4f18
+rsp            0x7fffffffbc58	0x7fffffffbc58
+r8             0x1	1
+r9             0x0	0
+r10            0x555555973010	93824996552720
+r11            0x0	0
+r12            0x7fffffffbd50	140737488338256
+r13            0x5555559b4fc0	93824996822976
+r14            0x0	0
+r15            0x5555559b4990	93824996821392
+rip            0x5555555b83a7	0x5555555b83a7 <bool MatchCompiler::operator==<2u>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, MatchCompiler::ConstString<2u> const&)+3>
+eflags         0x10206	[ PF IF RF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+gs             0x0	0
+
+
+current instructions:
+=> 0x5555555b83a7 <_ZN13MatchCompilereqILj2EEEbRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS_11ConstStringIXT_EEE+3>:	mov    (%rdi),%rcx
+   0x5555555b83aa <_ZN13MatchCompilereqILj2EEEbRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS_11ConstStringIXT_EEE+6>:	xor    %eax,%eax
+   0x5555555b83ac <_ZN13MatchCompilereqILj2EEEbRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS_11ConstStringIXT_EEE+8>:	mov    (%rdx),%sil
+   0x5555555b83af <_ZN13MatchCompilereqILj2EEEbRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS_11ConstStringIXT_EEE+11>:	cmp    %sil,(%rcx)
+   0x5555555b83b2 <_ZN13MatchCompilereqILj2EEEbRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS_11ConstStringIXT_EEE+14>:	jne    0x5555555b83bd <_ZN13MatchCompilereqILj2EEEbRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS_11ConstStringIXT_EEE+25>
+   0x5555555b83b4 <_ZN13MatchCompilereqILj2EEEbRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS_11ConstStringIXT_EEE+16>:	mov    0x1(%rdx),%al
+   0x5555555b83b7 <_ZN13MatchCompilereqILj2EEEbRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS_11ConstStringIXT_EEE+19>:	cmp    %al,0x1(%rcx)
+   0x5555555b83ba <_ZN13MatchCompilereqILj2EEEbRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS_11ConstStringIXT_EEE+22>:	sete   %al
+   0x5555555b83bd <_ZN13MatchCompilereqILj2EEEbRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS_11ConstStringIXT_EEE+25>:	retq   
+   0x5555555b83be <_Z18isLikelyStreamReadbPK5Token>:	push   %r15
+   0x5555555b83c0 <_Z18isLikelyStreamReadbPK5Token+2>:	push   %r14
+   0x5555555b83c2 <_Z18isLikelyStreamReadbPK5Token+4>:	push   %r13
+   0x5555555b83c4 <_Z18isLikelyStreamReadbPK5Token+6>:	push   %r12
+   0x5555555b83c6 <_Z18isLikelyStreamReadbPK5Token+8>:	push   %rbp
+   0x5555555b83c7 <_Z18isLikelyStreamReadbPK5Token+9>:	push   %rbx
+   0x5555555b83c8 <_Z18isLikelyStreamReadbPK5Token+10>:	sub    $0x48,%rsp
+
+
+threads backtrace:
+
+Thread 1 (Thread 0x7ffff7fc6740 (LWP 3278)):
+#0  0x00005555555b83a7 in bool MatchCompiler::operator==<2u>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, MatchCompiler::ConstString<2u> const&) ()
+#1  0x00005555555b8d8c in bool MatchCompiler::operator!=<2u>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, MatchCompiler::ConstString<2u> const&) ()
+#2  0x00005555556c9295 in Tokenizer::simplifyTypedef() ()
+#3  0x00005555556dab73 in Tokenizer::simplifyTokenList1(char const*) ()
+#4  0x00005555556dafb8 in Tokenizer::simplifyTokens1(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+#5  0x00005555556562df in CppCheck::checkFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+#6  0x0000555555658329 in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+#7  0x00005555556fa8d6 in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+#8  0x00005555556fb145 in CppCheckExecutor::check(int, char const* const*) ()
+#9  0x00005555555b61ec in main ()

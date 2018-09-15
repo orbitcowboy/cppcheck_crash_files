@@ -1,0 +1,1 @@
+{typedef f typedef[]({typedef e e,>;typedef(((typedef<typedef|)))})}
