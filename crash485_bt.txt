@@ -1,0 +1,79 @@
+backtrace:
+#0  0x00005555556a0c29 in Token::insertToken(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) ()
+No symbol table info available.
+#1  0x00005555556ca4c0 in Tokenizer::simplifyTypedef() ()
+No symbol table info available.
+#2  0x00005555556dab73 in Tokenizer::simplifyTokenList1(char const*) ()
+No symbol table info available.
+#3  0x00005555556dafb8 in Tokenizer::simplifyTokens1(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+No symbol table info available.
+#4  0x00005555556562df in CppCheck::checkFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+No symbol table info available.
+#5  0x0000555555658329 in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+No symbol table info available.
+#6  0x00005555556fa8d6 in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+No symbol table info available.
+#7  0x00005555556fb145 in CppCheckExecutor::check(int, char const* const*) ()
+No symbol table info available.
+#8  0x00005555555b61ec in main ()
+No symbol table info available.
+
+
+registers:
+rax            0x0	0
+rbx            0x7fffffffbdc8	140737488338376
+rcx            0x0	0
+rdx            0x55555596be60	93824996523616
+rsi            0x7fffffffbdc8	140737488338376
+rdi            0x0	0
+rbp            0x5555559b0dd0	0x5555559b0dd0
+rsp            0x7fffffffbc40	0x7fffffffbc40
+r8             0x1	1
+r9             0xf	15
+r10            0x555555973010	93824996552720
+r11            0x0	0
+r12            0x0	0
+r13            0x0	0
+r14            0x7fffffffbdc8	140737488338376
+r15            0x5555559b09d0	93824996805072
+rip            0x5555556a0c29	0x5555556a0c29 <Token::insertToken(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool)+29>
+eflags         0x10246	[ PF ZF IF RF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+gs             0x0	0
+
+
+current instructions:
+=> 0x5555556a0c29 <_ZN5Token11insertTokenERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_b+29>:	cmpq   $0x0,0x10(%rdi)
+   0x5555556a0c2e <_ZN5Token11insertTokenERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_b+34>:	mov    %rdx,%r12
+   0x5555556a0c31 <_ZN5Token11insertTokenERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_b+37>:	mov    %rdi,%rbp
+   0x5555556a0c34 <_ZN5Token11insertTokenERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_b+40>:	mov    %rdi,%rbx
+   0x5555556a0c37 <_ZN5Token11insertTokenERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_b+43>:	je     0x5555556a0c52 <_ZN5Token11insertTokenERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_b+70>
+   0x5555556a0c39 <_ZN5Token11insertTokenERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_b+45>:	mov    $0xa0,%edi
+   0x5555556a0c3e <_ZN5Token11insertTokenERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_b+50>:	callq  0x5555555ad3b0 <_Znwm@plt>
+   0x5555556a0c43 <_ZN5Token11insertTokenERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_b+55>:	mov    0x0(%rbp),%rsi
+   0x5555556a0c47 <_ZN5Token11insertTokenERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_b+59>:	mov    %rax,%rdi
+   0x5555556a0c4a <_ZN5Token11insertTokenERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_b+62>:	mov    %rax,%rbx
+   0x5555556a0c4d <_ZN5Token11insertTokenERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_b+65>:	callq  0x55555569e2d8 <_ZN5TokenC2EP15TokensFrontBack>
+   0x5555556a0c52 <_ZN5Token11insertTokenERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_b+70>:	lea    0x8(%rbx),%rdi
+   0x5555556a0c56 <_ZN5Token11insertTokenERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_b+74>:	mov    %r14,%rsi
+   0x5555556a0c59 <_ZN5Token11insertTokenERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_b+77>:	callq  0x5555555ad100 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_assignERKS4_@plt>
+   0x5555556a0c5e <_ZN5Token11insertTokenERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_b+82>:	movl   $0x0,0x50(%rbx)
+   0x5555556a0c65 <_ZN5Token11insertTokenERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_b+89>:	mov    %rbx,%rdi
+
+
+threads backtrace:
+
+Thread 1 (Thread 0x7ffff7fc6740 (LWP 2776)):
+#0  0x00005555556a0c29 in Token::insertToken(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) ()
+#1  0x00005555556ca4c0 in Tokenizer::simplifyTypedef() ()
+#2  0x00005555556dab73 in Tokenizer::simplifyTokenList1(char const*) ()
+#3  0x00005555556dafb8 in Tokenizer::simplifyTokens1(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+#4  0x00005555556562df in CppCheck::checkFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+#5  0x0000555555658329 in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+#6  0x00005555556fa8d6 in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+#7  0x00005555556fb145 in CppCheckExecutor::check(int, char const* const*) ()
+#8  0x00005555555b61ec in main ()
