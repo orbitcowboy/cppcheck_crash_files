@@ -1,0 +1,85 @@
+backtrace:
+#0  0x000055555567b108 in ExprEngine::runChecks(ErrorLogger*, Tokenizer const*, Settings const*)::{lambda(Token const*, ExprEngine::Value const&, ExprEngine::DataBase*)#2}::operator()(Token const*, ExprEngine::Value const&, ExprEngine::DataBase*) const ()
+No symbol table info available.
+#1  0x00005555556794b0 in call(std::vector<std::function<void (Token const*, ExprEngine::Value const&, ExprEngine::DataBase*)>, std::allocator<std::function<void (Token const*, ExprEngine::Value const&, ExprEngine::DataBase*)> > > const&, Token const*, std::shared_ptr<ExprEngine::Value>, (anonymous namespace)::Data*) ()
+No symbol table info available.
+#2  0x000055555568536b in ExprEngine::executeFunction(Scope const*, Tokenizer const*, Settings const*, std::vector<std::function<void (Token const*, ExprEngine::Value const&, ExprEngine::DataBase*)>, std::allocator<std::function<void (Token const*, ExprEngine::Value const&, ExprEngine::DataBase*)> > > const&, std::ostream&) ()
+No symbol table info available.
+#3  0x00005555556854f2 in ExprEngine::executeAllFunctions(Tokenizer const*, Settings const*, std::vector<std::function<void (Token const*, ExprEngine::Value const&, ExprEngine::DataBase*)>, std::allocator<std::function<void (Token const*, ExprEngine::Value const&, ExprEngine::DataBase*)> > > const&, std::ostream&) ()
+No symbol table info available.
+#4  0x0000555555685778 in ExprEngine::runChecks(ErrorLogger*, Tokenizer const*, Settings const*) ()
+No symbol table info available.
+#5  0x0000555555664841 in CppCheck::checkNormalTokens(Tokenizer const&) ()
+No symbol table info available.
+#6  0x000055555566bf74 in CppCheck::checkFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+No symbol table info available.
+#7  0x000055555566ea2a in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+No symbol table info available.
+#8  0x00005555557578be in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+No symbol table info available.
+#9  0x0000555555758151 in CppCheckExecutor::check(int, char const* const*) ()
+No symbol table info available.
+#10 0x00005555555cd867 in main ()
+No symbol table info available.
+
+
+registers:
+rax            0x0                 0
+rbx            0x555555a3a160      93824997368160
+rcx            0x7fffffffaf88      140737488334728
+rdx            0x2                 2
+rsi            0x4                 4
+rdi            0x555555aa0990      93824997788048
+rbp            0x7fffffffb190      0x7fffffffb190
+rsp            0x7fffffffaf20      0x7fffffffaf20
+r8             0x3                 3
+r9             0x7ffff7f28fc0      140737353256896
+r10            0x7ffff7d76ec6      140737351478982
+r11            0x246               582
+r12            0x55555578462e      93824994526766
+r13            0x7fffffffb2d0      140737488335568
+r14            0x555555a3adc0      93824997371328
+r15            0x555555ad1930      93824997988656
+rip            0x55555567b108      0x55555567b108 <ExprEngine::runChecks(ErrorLogger*, Tokenizer const*, Settings const*)::{lambda(Token const*, ExprEngine::Value const&, ExprEngine::DataBase*)#2}::operator()(Token const*, ExprEngine::Value const&, ExprEngine::DataBase*) const+410>
+eflags         0x10246             [ PF ZF IF RF ]
+cs             0x33                51
+ss             0x2b                43
+ds             0x0                 0
+es             0x0                 0
+fs             0x0                 0
+gs             0x0                 0
+
+
+current instructions:
+=> 0x55555567b108 <_ZZN10ExprEngine9runChecksEP11ErrorLoggerPK9TokenizerPK8SettingsENKUlPK5TokenRKNS_5ValueEPNS_8DataBaseEE0_clESA_SD_SF_+410>:	cmpq   $0x0,(%rax)
+   0x55555567b10c <_ZZN10ExprEngine9runChecksEP11ErrorLoggerPK9TokenizerPK8SettingsENKUlPK5TokenRKNS_5ValueEPNS_8DataBaseEE0_clESA_SD_SF_+414>:	mov    %rax,-0x250(%rbp)
+   0x55555567b113 <_ZZN10ExprEngine9runChecksEP11ErrorLoggerPK9TokenizerPK8SettingsENKUlPK5TokenRKNS_5ValueEPNS_8DataBaseEE0_clESA_SD_SF_+421>:	je     0x55555567b50b <_ZZN10ExprEngine9runChecksEP11ErrorLoggerPK9TokenizerPK8SettingsENKUlPK5TokenRKNS_5ValueEPNS_8DataBaseEE0_clESA_SD_SF_+1437>
+   0x55555567b119 <_ZZN10ExprEngine9runChecksEP11ErrorLoggerPK9TokenizerPK8SettingsENKUlPK5TokenRKNS_5ValueEPNS_8DataBaseEE0_clESA_SD_SF_+427>:	lea    -0x1c8(%rbp),%rax
+   0x55555567b120 <_ZZN10ExprEngine9runChecksEP11ErrorLoggerPK9TokenizerPK8SettingsENKUlPK5TokenRKNS_5ValueEPNS_8DataBaseEE0_clESA_SD_SF_+434>:	movb   $0x0,-0x1c8(%rbp)
+   0x55555567b127 <_ZZN10ExprEngine9runChecksEP11ErrorLoggerPK9TokenizerPK8SettingsENKUlPK5TokenRKNS_5ValueEPNS_8DataBaseEE0_clESA_SD_SF_+441>:	lea    -0x210(%rbp),%rdx
+   0x55555567b12e <_ZZN10ExprEngine9runChecksEP11ErrorLoggerPK9TokenizerPK8SettingsENKUlPK5TokenRKNS_5ValueEPNS_8DataBaseEE0_clESA_SD_SF_+448>:	xor    %esi,%esi
+   0x55555567b130 <_ZZN10ExprEngine9runChecksEP11ErrorLoggerPK9TokenizerPK8SettingsENKUlPK5TokenRKNS_5ValueEPNS_8DataBaseEE0_clESA_SD_SF_+450>:	mov    %rax,-0x1d8(%rbp)
+   0x55555567b137 <_ZZN10ExprEngine9runChecksEP11ErrorLoggerPK9TokenizerPK8SettingsENKUlPK5TokenRKNS_5ValueEPNS_8DataBaseEE0_clESA_SD_SF_+457>:	mov    -0x250(%rbp),%rax
+   0x55555567b13e <_ZZN10ExprEngine9runChecksEP11ErrorLoggerPK9TokenizerPK8SettingsENKUlPK5TokenRKNS_5ValueEPNS_8DataBaseEE0_clESA_SD_SF_+464>:	movq   $0x0,-0x1d0(%rbp)
+   0x55555567b149 <_ZZN10ExprEngine9runChecksEP11ErrorLoggerPK9TokenizerPK8SettingsENKUlPK5TokenRKNS_5ValueEPNS_8DataBaseEE0_clESA_SD_SF_+475>:	mov    (%rax),%rax
+   0x55555567b14c <_ZZN10ExprEngine9runChecksEP11ErrorLoggerPK9TokenizerPK8SettingsENKUlPK5TokenRKNS_5ValueEPNS_8DataBaseEE0_clESA_SD_SF_+478>:	mov    0x48(%rax),%rdi
+   0x55555567b150 <_ZZN10ExprEngine9runChecksEP11ErrorLoggerPK9TokenizerPK8SettingsENKUlPK5TokenRKNS_5ValueEPNS_8DataBaseEE0_clESA_SD_SF_+482>:	lea    -0x1d8(%rbp),%rax
+   0x55555567b157 <_ZZN10ExprEngine9runChecksEP11ErrorLoggerPK9TokenizerPK8SettingsENKUlPK5TokenRKNS_5ValueEPNS_8DataBaseEE0_clESA_SD_SF_+489>:	mov    %rax,-0x238(%rbp)
+   0x55555567b15e <_ZZN10ExprEngine9runChecksEP11ErrorLoggerPK9TokenizerPK8SettingsENKUlPK5TokenRKNS_5ValueEPNS_8DataBaseEE0_clESA_SD_SF_+496>:	callq  0x5555556de234 <_ZNK9TokenImpl20getCppcheckAttributeENS_18CppcheckAttributes4TypeEPx>
+   0x55555567b163 <_ZZN10ExprEngine9runChecksEP11ErrorLoggerPK9TokenizerPK8SettingsENKUlPK5TokenRKNS_5ValueEPNS_8DataBaseEE0_clESA_SD_SF_+501>:	test   %al,%al
+
+
+threads backtrace:
+
+Thread 1 (Thread 0x7ffff79c7740 (LWP 13949)):
+#0  0x000055555567b108 in ExprEngine::runChecks(ErrorLogger*, Tokenizer const*, Settings const*)::{lambda(Token const*, ExprEngine::Value const&, ExprEngine::DataBase*)#2}::operator()(Token const*, ExprEngine::Value const&, ExprEngine::DataBase*) const ()
+#1  0x00005555556794b0 in call(std::vector<std::function<void (Token const*, ExprEngine::Value const&, ExprEngine::DataBase*)>, std::allocator<std::function<void (Token const*, ExprEngine::Value const&, ExprEngine::DataBase*)> > > const&, Token const*, std::shared_ptr<ExprEngine::Value>, (anonymous namespace)::Data*) ()
+#2  0x000055555568536b in ExprEngine::executeFunction(Scope const*, Tokenizer const*, Settings const*, std::vector<std::function<void (Token const*, ExprEngine::Value const&, ExprEngine::DataBase*)>, std::allocator<std::function<void (Token const*, ExprEngine::Value const&, ExprEngine::DataBase*)> > > const&, std::ostream&) ()
+#3  0x00005555556854f2 in ExprEngine::executeAllFunctions(Tokenizer const*, Settings const*, std::vector<std::function<void (Token const*, ExprEngine::Value const&, ExprEngine::DataBase*)>, std::allocator<std::function<void (Token const*, ExprEngine::Value const&, ExprEngine::DataBase*)> > > const&, std::ostream&) ()
+#4  0x0000555555685778 in ExprEngine::runChecks(ErrorLogger*, Tokenizer const*, Settings const*) ()
+#5  0x0000555555664841 in CppCheck::checkNormalTokens(Tokenizer const&) ()
+#6  0x000055555566bf74 in CppCheck::checkFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+#7  0x000055555566ea2a in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+#8  0x00005555557578be in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+#9  0x0000555555758151 in CppCheckExecutor::check(int, char const* const*) ()
+#10 0x00005555555cd867 in main ()
