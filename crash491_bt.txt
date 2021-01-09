@@ -1,0 +1,88 @@
+backtrace:
+#0  0x000055555567416a in getAstParentSkipPossibleCastAndAddressOf(Token const*, bool*) ()
+No symbol table info available.
+#1  0x0000555555675443 in CheckUninitVar::isVariableUsage(Token const*, bool, CheckUninitVar::Alloc, int) const ()
+No symbol table info available.
+#2  0x000055555567a9bf in CheckUninitVar::checkScopeForVariable(Token const*, Variable const&, bool*, bool*, CheckUninitVar::Alloc*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::map<int, VariableValue, std::less<int>, std::allocator<std::pair<int const, VariableValue> > >) ()
+No symbol table info available.
+#3  0x000055555567b9d5 in CheckUninitVar::checkScope(Scope const*, std::set<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&) ()
+No symbol table info available.
+#4  0x000055555567bc74 in CheckUninitVar::check() ()
+No symbol table info available.
+#5  0x000055555567bd2d in CheckUninitVar::runChecks(Tokenizer const*, Settings const*, ErrorLogger*) ()
+No symbol table info available.
+#6  0x00005555556980d4 in CppCheck::checkNormalTokens(Tokenizer const&) ()
+No symbol table info available.
+#7  0x00005555556a2104 in CppCheck::checkFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+No symbol table info available.
+#8  0x00005555556a515c in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+No symbol table info available.
+#9  0x00005555557a8d9c in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+No symbol table info available.
+#10 0x00005555557a9693 in CppCheckExecutor::check(int, char const* const*) ()
+No symbol table info available.
+#11 0x00005555555e48d7 in main ()
+No symbol table info available.
+
+
+registers:
+rax            0x0                 0
+rbx            0x55555588e220      93824995615264
+rcx            0x55555588e028      93824995614760
+rdx            0x5555557c393d      93824994785597
+rsi            0x7fffffffb126      140737488335142
+rdi            0x55555588e018      93824995614744
+rbp            0x7fffffffb1d8      0x7fffffffb1d8
+rsp            0x7fffffffb110      0x7fffffffb110
+r8             0x7fffffffb148      140737488335176
+r9             0x7fffffffb4d4      140737488336084
+r10            0x0                 0
+r11            0x7d                125
+r12            0x55555588e018      93824995614744
+r13            0x7fffffffb130      140737488335152
+r14            0x55555588e010      93824995614736
+r15            0x7fffffffb138      140737488335160
+rip            0x55555567416a      0x55555567416a <getAstParentSkipPossibleCastAndAddressOf(Token const*, bool*)+262>
+eflags         0x10246             [ PF ZF IF RF ]
+cs             0x33                51
+ss             0x2b                43
+ds             0x0                 0
+es             0x0                 0
+fs             0x0                 0
+gs             0x0                 0
+
+
+current instructions:
+=> 0x55555567416a <_ZL40getAstParentSkipPossibleCastAndAddressOfPK5TokenPb+262>:	mov    0x30(%rax),%rbx
+   0x55555567416e <_ZL40getAstParentSkipPossibleCastAndAddressOfPK5TokenPb+266>:	test   %rbx,%rbx
+   0x555555674171 <_ZL40getAstParentSkipPossibleCastAndAddressOfPK5TokenPb+269>:	je     0x55555567414b <_ZL40getAstParentSkipPossibleCastAndAddressOfPK5TokenPb+231>
+   0x555555674173 <_ZL40getAstParentSkipPossibleCastAndAddressOfPK5TokenPb+271>:	lea    0x1639c4(%rip),%rax        # 0x5555557d7b3e
+   0x55555567417a <_ZL40getAstParentSkipPossibleCastAndAddressOfPK5TokenPb+278>:	lea    0x8(%rbx),%rdi
+   0x55555567417e <_ZL40getAstParentSkipPossibleCastAndAddressOfPK5TokenPb+282>:	mov    %r13,%rsi
+   0x555555674181 <_ZL40getAstParentSkipPossibleCastAndAddressOfPK5TokenPb+285>:	mov    %rax,0x20(%rsp)
+   0x555555674186 <_ZL40getAstParentSkipPossibleCastAndAddressOfPK5TokenPb+290>:	callq  0x5555555e7663 <_ZN13MatchCompilereqILj2EEEbRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS_11ConstStringIXT_EEE>
+   0x55555567418b <_ZL40getAstParentSkipPossibleCastAndAddressOfPK5TokenPb+295>:	test   %al,%al
+   0x55555567418d <_ZL40getAstParentSkipPossibleCastAndAddressOfPK5TokenPb+297>:	je     0x55555567414b <_ZL40getAstParentSkipPossibleCastAndAddressOfPK5TokenPb+231>
+   0x55555567418f <_ZL40getAstParentSkipPossibleCastAndAddressOfPK5TokenPb+299>:	mov    0x28(%rbx),%rbx
+   0x555555674193 <_ZL40getAstParentSkipPossibleCastAndAddressOfPK5TokenPb+303>:	test   %rbx,%rbx
+   0x555555674196 <_ZL40getAstParentSkipPossibleCastAndAddressOfPK5TokenPb+306>:	je     0x55555567414b <_ZL40getAstParentSkipPossibleCastAndAddressOfPK5TokenPb+231>
+   0x555555674198 <_ZL40getAstParentSkipPossibleCastAndAddressOfPK5TokenPb+308>:	testb  $0x20,0x46(%rbx)
+   0x55555567419c <_ZL40getAstParentSkipPossibleCastAndAddressOfPK5TokenPb+312>:	je     0x55555567414b <_ZL40getAstParentSkipPossibleCastAndAddressOfPK5TokenPb+231>
+   0x55555567419e <_ZL40getAstParentSkipPossibleCastAndAddressOfPK5TokenPb+314>:	mov    0x48(%rbx),%rax
+
+
+threads backtrace:
+
+Thread 1 (Thread 0x7ffff79c3740 (LWP 4290)):
+#0  0x000055555567416a in getAstParentSkipPossibleCastAndAddressOf(Token const*, bool*) ()
+#1  0x0000555555675443 in CheckUninitVar::isVariableUsage(Token const*, bool, CheckUninitVar::Alloc, int) const ()
+#2  0x000055555567a9bf in CheckUninitVar::checkScopeForVariable(Token const*, Variable const&, bool*, bool*, CheckUninitVar::Alloc*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::map<int, VariableValue, std::less<int>, std::allocator<std::pair<int const, VariableValue> > >) ()
+#3  0x000055555567b9d5 in CheckUninitVar::checkScope(Scope const*, std::set<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&) ()
+#4  0x000055555567bc74 in CheckUninitVar::check() ()
+#5  0x000055555567bd2d in CheckUninitVar::runChecks(Tokenizer const*, Settings const*, ErrorLogger*) ()
+#6  0x00005555556980d4 in CppCheck::checkNormalTokens(Tokenizer const&) ()
+#7  0x00005555556a2104 in CppCheck::checkFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+#8  0x00005555556a515c in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+#9  0x00005555557a8d9c in CppCheckExecutor::check_internal(CppCheck&, int, char const* const*) ()
+#10 0x00005555557a9693 in CppCheckExecutor::check(int, char const* const*) ()
+#11 0x00005555555e48d7 in main ()
