@@ -1,0 +1,82 @@
+backtrace:
+#0  0x00000000007f0457 in ConditionHandler::afterCondition(TokenList*, SymbolDatabase*, ErrorLogger*, Settings const*) const::{lambda(ConditionHandler::Condition const&, Token*, Scope const*)#1}::operator()(ConditionHandler::Condition const&, Token*, Scope const*) const ()
+No symbol table info available.
+#1  0x00000000007ee138 in ConditionHandler::traverseCondition(TokenList*, SymbolDatabase*, std::function<void (ConditionHandler::Condition const&, Token*, Scope const*)> const&) const ()
+No symbol table info available.
+#2  0x00000000007edd73 in ConditionHandler::afterCondition(TokenList*, SymbolDatabase*, ErrorLogger*, Settings const*) const ()
+No symbol table info available.
+#3  0x00000000007ab451 in ValueFlow::setValues(TokenList*, SymbolDatabase*, ErrorLogger*, Settings const*) ()
+No symbol table info available.
+#4  0x000000000072c24f in Tokenizer::simplifyTokens1(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+No symbol table info available.
+#5  0x00000000005cb53f in CppCheck::checkFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+No symbol table info available.
+#6  0x00000000005c344c in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+No symbol table info available.
+#7  0x0000000000808077 in CppCheckExecutor::check_internal(CppCheck&) ()
+No symbol table info available.
+#8  0x000000000080709c in CppCheckExecutor::check(int, char const* const*) ()
+No symbol table info available.
+#9  0x000000000080b668 in main ()
+No symbol table info available.
+
+
+registers:
+rax            0x0                 0
+rbx            0x0                 0
+rcx            0x7fffffffaa48      140737488333384
+rdx            0x2                 2
+rsi            0x2626              9766
+rdi            0x7fffffffaa80      140737488333440
+rbp            0x947e40            0x947e40
+rsp            0x7fffffffa9b0      0x7fffffffa9b0
+r8             0x0                 0
+r9             0x7fffffffaa80      140737488333440
+r10            0xfffffffffffff71c  -2276
+r11            0x7ffff695c830      140737330399280
+r12            0x947980            9730432
+r13            0x947980            9730432
+r14            0x0                 0
+r15            0x7fffffffaa70      140737488333424
+rip            0x7f0457            0x7f0457 <ConditionHandler::afterCondition(TokenList*, SymbolDatabase*, ErrorLogger*, Settings const*) const::{lambda(ConditionHandler::Condition const&, Token*, Scope const*)#1}::operator()(ConditionHandler::Condition const&, Token*, Scope const*) const+2487>
+eflags         0x10283             [ CF SF IF RF ]
+cs             0x33                51
+ss             0x2b                43
+ds             0x0                 0
+es             0x0                 0
+fs             0x0                 0
+gs             0x0                 0
+
+
+current instructions:
+=> 0x7f0457 <_ZZNK16ConditionHandler14afterConditionEP9TokenListP14SymbolDatabaseP11ErrorLoggerPK8SettingsENKUlRKNS_9ConditionEP5TokenPK5ScopeE_clESB_SD_SG_+2487>:	mov    0x8(%rbx),%rax
+   0x7f045b <_ZZNK16ConditionHandler14afterConditionEP9TokenListP14SymbolDatabaseP11ErrorLoggerPK8SettingsENKUlRKNS_9ConditionEP5TokenPK5ScopeE_clESB_SD_SG_+2491>:	cmpb   $0x3b,(%rax)
+   0x7f045e <_ZZNK16ConditionHandler14afterConditionEP9TokenListP14SymbolDatabaseP11ErrorLoggerPK8SettingsENKUlRKNS_9ConditionEP5TokenPK5ScopeE_clESB_SD_SG_+2494>:	jne    0x7f0703 <_ZZNK16ConditionHandler14afterConditionEP9TokenListP14SymbolDatabaseP11ErrorLoggerPK8SettingsENKUlRKNS_9ConditionEP5TokenPK5ScopeE_clESB_SD_SG_+3171>
+   0x7f0464 <_ZZNK16ConditionHandler14afterConditionEP9TokenListP14SymbolDatabaseP11ErrorLoggerPK8SettingsENKUlRKNS_9ConditionEP5TokenPK5ScopeE_clESB_SD_SG_+2500>:	cmpb   $0x0,0x1(%rax)
+   0x7f0468 <_ZZNK16ConditionHandler14afterConditionEP9TokenListP14SymbolDatabaseP11ErrorLoggerPK8SettingsENKUlRKNS_9ConditionEP5TokenPK5ScopeE_clESB_SD_SG_+2504>:	jne    0x7f0703 <_ZZNK16ConditionHandler14afterConditionEP9TokenListP14SymbolDatabaseP11ErrorLoggerPK8SettingsENKUlRKNS_9ConditionEP5TokenPK5ScopeE_clESB_SD_SG_+3171>
+   0x7f046e <_ZZNK16ConditionHandler14afterConditionEP9TokenListP14SymbolDatabaseP11ErrorLoggerPK8SettingsENKUlRKNS_9ConditionEP5TokenPK5ScopeE_clESB_SD_SG_+2510>:	mov    0x30(%r13),%rdx
+   0x7f0472 <_ZZNK16ConditionHandler14afterConditionEP9TokenListP14SymbolDatabaseP11ErrorLoggerPK8SettingsENKUlRKNS_9ConditionEP5TokenPK5ScopeE_clESB_SD_SG_+2514>:	test   %rdx,%rdx
+   0x7f0475 <_ZZNK16ConditionHandler14afterConditionEP9TokenListP14SymbolDatabaseP11ErrorLoggerPK8SettingsENKUlRKNS_9ConditionEP5TokenPK5ScopeE_clESB_SD_SG_+2517>:	je     0x7f0703 <_ZZNK16ConditionHandler14afterConditionEP9TokenListP14SymbolDatabaseP11ErrorLoggerPK8SettingsENKUlRKNS_9ConditionEP5TokenPK5ScopeE_clESB_SD_SG_+3171>
+   0x7f047b <_ZZNK16ConditionHandler14afterConditionEP9TokenListP14SymbolDatabaseP11ErrorLoggerPK8SettingsENKUlRKNS_9ConditionEP5TokenPK5ScopeE_clESB_SD_SG_+2523>:	mov    0x8(%rdx),%rax
+   0x7f047f <_ZZNK16ConditionHandler14afterConditionEP9TokenListP14SymbolDatabaseP11ErrorLoggerPK8SettingsENKUlRKNS_9ConditionEP5TokenPK5ScopeE_clESB_SD_SG_+2527>:	mov    (%rax),%cl
+   0x7f0481 <_ZZNK16ConditionHandler14afterConditionEP9TokenListP14SymbolDatabaseP11ErrorLoggerPK8SettingsENKUlRKNS_9ConditionEP5TokenPK5ScopeE_clESB_SD_SG_+2529>:	cmp    $0x66,%cl
+   0x7f0484 <_ZZNK16ConditionHandler14afterConditionEP9TokenListP14SymbolDatabaseP11ErrorLoggerPK8SettingsENKUlRKNS_9ConditionEP5TokenPK5ScopeE_clESB_SD_SG_+2532>:	je     0x7f0593 <_ZZNK16ConditionHandler14afterConditionEP9TokenListP14SymbolDatabaseP11ErrorLoggerPK8SettingsENKUlRKNS_9ConditionEP5TokenPK5ScopeE_clESB_SD_SG_+2803>
+   0x7f048a <_ZZNK16ConditionHandler14afterConditionEP9TokenListP14SymbolDatabaseP11ErrorLoggerPK8SettingsENKUlRKNS_9ConditionEP5TokenPK5ScopeE_clESB_SD_SG_+2538>:	cmp    $0x77,%cl
+   0x7f048d <_ZZNK16ConditionHandler14afterConditionEP9TokenListP14SymbolDatabaseP11ErrorLoggerPK8SettingsENKUlRKNS_9ConditionEP5TokenPK5ScopeE_clESB_SD_SG_+2541>:	je     0x7f054e <_ZZNK16ConditionHandler14afterConditionEP9TokenListP14SymbolDatabaseP11ErrorLoggerPK8SettingsENKUlRKNS_9ConditionEP5TokenPK5ScopeE_clESB_SD_SG_+2734>
+   0x7f0493 <_ZZNK16ConditionHandler14afterConditionEP9TokenListP14SymbolDatabaseP11ErrorLoggerPK8SettingsENKUlRKNS_9ConditionEP5TokenPK5ScopeE_clESB_SD_SG_+2547>:	cmp    $0x69,%cl
+   0x7f0496 <_ZZNK16ConditionHandler14afterConditionEP9TokenListP14SymbolDatabaseP11ErrorLoggerPK8SettingsENKUlRKNS_9ConditionEP5TokenPK5ScopeE_clESB_SD_SG_+2550>:	jne    0x7f0703 <_ZZNK16ConditionHandler14afterConditionEP9TokenListP14SymbolDatabaseP11ErrorLoggerPK8SettingsENKUlRKNS_9ConditionEP5TokenPK5ScopeE_clESB_SD_SG_+3171>
+
+
+threads backtrace:
+
+Thread 1 (Thread 0x7ffff64dc7c0 (LWP 14788)):
+#0  0x00000000007f0457 in ConditionHandler::afterCondition(TokenList*, SymbolDatabase*, ErrorLogger*, Settings const*) const::{lambda(ConditionHandler::Condition const&, Token*, Scope const*)#1}::operator()(ConditionHandler::Condition const&, Token*, Scope const*) const ()
+#1  0x00000000007ee138 in ConditionHandler::traverseCondition(TokenList*, SymbolDatabase*, std::function<void (ConditionHandler::Condition const&, Token*, Scope const*)> const&) const ()
+#2  0x00000000007edd73 in ConditionHandler::afterCondition(TokenList*, SymbolDatabase*, ErrorLogger*, Settings const*) const ()
+#3  0x00000000007ab451 in ValueFlow::setValues(TokenList*, SymbolDatabase*, ErrorLogger*, Settings const*) ()
+#4  0x000000000072c24f in Tokenizer::simplifyTokens1(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+#5  0x00000000005cb53f in CppCheck::checkFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::istream&) ()
+#6  0x00000000005c344c in CppCheck::check(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) ()
+#7  0x0000000000808077 in CppCheckExecutor::check_internal(CppCheck&) ()
+#8  0x000000000080709c in CppCheckExecutor::check(int, char const* const*) ()
+#9  0x000000000080b668 in main ()
